@@ -1,0 +1,26 @@
+
+[audacious]
+shuffle=TRUE
+
+[audgui]
+filebrowser_win=621,271,672,480
+filesel_path=/home/ifohancroft
+
+[gtkui]
+column_widths=10,275,175,10,175,175,10,100,39,10,275,275,275,10,275
+infoarea_show_vis=FALSE
+infoarea_visible=FALSE
+player_height=508
+player_width=954
+player_x=2880
+player_y=0
+playlist_columns=artist album title length
+playlist_tabs_visible=FALSE
+statusbar_visible=FALSE
+
+[gtkui-layout]
+item_count=0
+
+[song_change]
+cmd_line=echo "%a - %T " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt
+cmd_line_after=echo "No song currently playing " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt
