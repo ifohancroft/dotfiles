@@ -132,8 +132,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="2"
-         height="2.375"
+         width="1.26269"
+         height="382.595"
          rx="0"
          ry="0" />
       <eventcontext
@@ -688,11 +688,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="356"
-       h="472"
-       visible="0"
+       w="331"
+       h="485"
+       visible="1"
        state="2"
-       placement="1">
+       placement="5">
       <group
          id="exportarea"
          value="page" />
@@ -757,7 +757,7 @@
        panel_border="0"
        x="0"
        y="0"
-       w="228"
+       w="331"
        h="152"
        visible="1"
        state="2"
@@ -793,11 +793,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="228"
-       h="101"
+       w="331"
+       h="485"
        visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="transparency"
        on-focus="1.0"
