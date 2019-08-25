@@ -1,19 +1,56 @@
 
-[audacious]
-shuffle=TRUE
-
 [audgui]
 filebrowser_win=621,271,672,480
 filesel_path=/home/ifohancroft
+jump_to_track_win=672,316,576,480
+
+[globalHotkey]
+Hotkey_0_event=0
+Hotkey_0_key=33
+Hotkey_0_mask=12
+Hotkey_0_type=0
+Hotkey_1_event=1
+Hotkey_1_key=36
+Hotkey_1_mask=12
+Hotkey_1_type=0
+Hotkey_2_event=2
+Hotkey_2_key=65
+Hotkey_2_mask=12
+Hotkey_2_type=0
+Hotkey_3_event=3
+Hotkey_3_key=39
+Hotkey_3_mask=12
+Hotkey_3_type=0
+Hotkey_4_event=4
+Hotkey_4_key=57
+Hotkey_4_mask=12
+Hotkey_4_type=0
+Hotkey_5_event=7
+Hotkey_5_key=58
+Hotkey_5_mask=12
+Hotkey_5_type=0
+Hotkey_6_event=10
+Hotkey_6_key=44
+Hotkey_6_mask=12
+Hotkey_6_type=0
+Hotkey_7_event=9
+Hotkey_7_key=122
+Hotkey_7_mask=0
+Hotkey_7_type=0
+Hotkey_8_event=10
+Hotkey_8_key=44
+Hotkey_8_mask=12
+Hotkey_8_type=0
+NumHotkeys=7
 
 [gtkui]
 column_widths=10,275,175,10,175,175,10,100,39,10,275,275,275,10,275
 infoarea_show_vis=FALSE
 infoarea_visible=FALSE
-player_height=508
-player_width=954
-player_x=2880
-player_y=0
+player_height=1015
+player_width=624
+player_x=648
+player_y=49
 playlist_columns=artist album title length
 playlist_tabs_visible=FALSE
 statusbar_visible=FALSE
@@ -24,3 +61,6 @@ item_count=0
 [song_change]
 cmd_line=echo "%a - %T " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt
 cmd_line_after=echo "No song currently playing " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt
+
+[statusicon]
+close_to_tray=TRUE
