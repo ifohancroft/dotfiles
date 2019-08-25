@@ -5,11 +5,12 @@
     (name "Core Pointer")
     (tool-options "GimpPencilOptions"
         (tool "gimp-pencil-tool")
+        (foreground (color-rgb 0.937500 0.006292 0.006292))
         (brush "2. Hardness 050")
         (dynamics "Dynamics Off")
         (gradient "FG to BG (RGB)")
         (palette "Color History")
-        (brush-size 51.000000)
+        (brush-size 10.000000)
         (brush-hardness 0.500000))
     (use-fg-bg yes)
     (use-brush yes)
