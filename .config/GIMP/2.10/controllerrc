@@ -9,8 +9,8 @@
     (controller "GimpControllerWheel")
     (mapping
         (map "scroll-down-shift-primary" "tools-aspect-decrease")
-        (map "scroll-down" "view-zoom-out")
         (map "scroll-down-primary" "view-scroll-page-down")
+        (map "scroll-down" "view-zoom-out")
         (map "scroll-up-shift-alt" "tools-angle-increase")
         (map "scroll-down-shift-primary-alt" "tools-spacing-decrease")
         (map "scroll-down-shift-alt" "tools-angle-decrease")
