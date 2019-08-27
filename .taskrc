@@ -1,0 +1,61 @@
+# [Created by task 2.5.1 8/11/2019 01:55:57]
+# Taskwarrior program configuration file.
+# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# Use the command 'task show' to see all defaults and overrides
+
+# Files
+data.location=~/.task
+
+# Color theme (uncomment one to use)
+#include /usr/share/doc/task/rc/light-16.theme
+#include /usr/share/doc/task/rc/light-256.theme
+#include /usr/share/doc/task/rc/dark-16.theme
+#include /usr/share/doc/task/rc/dark-256.theme
+#include /usr/share/doc/task/rc/dark-red-256.theme
+#include /usr/share/doc/task/rc/dark-green-256.theme
+#include /usr/share/doc/task/rc/dark-blue-256.theme
+#include /usr/share/doc/task/rc/dark-violets-256.theme
+#include /usr/share/doc/task/rc/dark-yellow-green.theme
+#include /usr/share/doc/task/rc/dark-gray-256.theme
+#include /usr/share/doc/task/rc/dark-gray-blue-256.theme
+#include /usr/share/doc/task/rc/solarized-dark-256.theme
+#include /usr/share/doc/task/rc/solarized-light-256.theme
+#include /usr/share/doc/task/rc/no-color.theme
+
+report.ifohancroft.columns=id,start.age,depends,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.ifohancroft.description=ifohancroft's custom report
+report.ifohancroft.filter=status:pending limit:page
+report.ifohancroft.labels=ID,Active,Deps,Project,Tags,Recur,S,Due,Until,Description,Priority
+report.ifohancroft.sort=project,depends,urgency-
+urgency.active.coefficient=0
+urgency.age.coefficient=0
+urgency.annotations.coefficient=0
+urgency.tags.coefficient=0
+urgency.uda.priority.H.coefficient=0
+urgency.uda.priority.M.coefficient=0
+urgency.uda.priority.L.coefficient=0
+urgency.uda.priority.10.coefficient=10
+urgency.uda.priority.9.coefficient=9
+urgency.uda.priority.8.coefficient=8
+urgency.uda.priority.7.coefficient=7
+urgency.uda.priority.6.coefficient=6
+urgency.uda.priority.5.coefficient=5
+urgency.uda.priority.4.coefficient=4
+urgency.uda.priority.3.coefficient=3
+urgency.uda.priority.2.coefficient=2
+urgency.uda.priority.1.coefficient=1
+uda.priority.type=numeric
+uda.priority.values=10,9,8,7,6,5,4,3,2,1,
+default.command=ifohancroft
+weekstart=monday
+dateformat=D-M-Y
+dateformat.edit=D-M-Y H:N:S
+dateformat.holiday=DMY
+dateformat.info=D-M-Y H:N:S
