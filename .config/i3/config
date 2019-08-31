@@ -2,6 +2,8 @@ set $mod Mod4
 
 floating_modifier $mod
 
+font pango:monospace 14px
+
 default_border none
 default_floating_border none
 smart_gaps on
