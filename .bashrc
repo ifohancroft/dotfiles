@@ -17,4 +17,5 @@ alias search='googler --url-handler dump-content google'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls='ls --color=auto'
 set -o vi
+export TERM=xterm-termite
 
