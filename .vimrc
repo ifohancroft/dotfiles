@@ -23,3 +23,7 @@ set title
 let &iconstring = "vim"
 set icon
 
+" Gamer Fix
+nnoremap G gg
+nnoremap gg G
+
