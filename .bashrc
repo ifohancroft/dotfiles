@@ -1,21 +1,12 @@
-# .bashrc
-
-# Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# User specific environment
-PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-export PATH
-
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
 alias search='googler --url-handler dump-content google'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias ls='ls --color=auto'
-set -o vi
-export TERM=xterm-termite
-
+alias ls='ls --color=auto --group-directories-first'
+alias diff='diff --color=auto'
+PS1="[\w]\\$ "
+if [[ $TERM == 'xterm-termite' ]]; then
+    PROMPT_COMMAND='__vte_osc7 && echo -ne "\033]0;Termite: ${PWD/#$HOME/\~}\007"'
+fi
