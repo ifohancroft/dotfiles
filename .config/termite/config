@@ -71,6 +71,9 @@ color12 = #0099cc
 color13 = #0099ff
 color14 = #66cccc
 color15 = #ccffff
+color16 = #000000
+color17 = #666699
+color18 = #6400a4
 
 [hints]
 #font = Monospace 12

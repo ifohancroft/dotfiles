@@ -1,6 +1,6 @@
 {
-    "current_program_scene": "[Scene] Tech",
-    "current_scene": "[Scene] Tech",
+    "current_program_scene": "Webcam",
+    "current_scene": "Webcam",
     "current_transition": "Fade",
     "groups": [],
     "modules": {
@@ -14,6 +14,7 @@
         "output-timer": {
             "autoStartRecordTimer": false,
             "autoStartStreamTimer": false,
+            "pauseRecordTimer": false,
             "recordTimerHours": 0,
             "recordTimerMinutes": 0,
             "recordTimerSeconds": 30,
@@ -46,10 +47,10 @@
     "scaling_off_y": 0.0,
     "scene_order": [
         {
-            "name": "[Scene] Gaming"
+            "name": "[Scene] Tech"
         },
         {
-            "name": "[Scene] Tech"
+            "name": "[Scene] Gaming"
         },
         {
             "name": "Webcam"
@@ -77,6 +78,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Noise Suppression",
+                    "prev_ver": 402653187,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -98,6 +100,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Noise Gate",
+                    "prev_ver": 402653187,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -121,6 +124,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Compressor",
+                    "prev_ver": 402653187,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -143,6 +147,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Tech] Microphone",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -172,6 +177,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Noise Suppression",
+                    "prev_ver": 402653187,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -193,6 +199,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Noise Gate",
+                    "prev_ver": 402653187,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -216,6 +223,7 @@
                     "monitoring_type": 0,
                     "muted": false,
                     "name": "Compressor",
+                    "prev_ver": 402653187,
                     "private_settings": {},
                     "push-to-mute": false,
                     "push-to-mute-delay": 0,
@@ -238,6 +246,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Gaming] Microphone",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -263,6 +272,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "StreamLabs Alert Box",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -293,6 +303,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Notifications",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -305,8 +316,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1.0,
+                            "y": 1.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -348,12 +359,15 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Tech] Tech",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
-            "settings": {},
+            "settings": {
+                "advanced": false
+            },
             "sync": 0,
             "volume": 1.0
         },
@@ -381,6 +395,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Scene] Tech",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -388,7 +403,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 20,
+                "id_counter": 21,
                 "items": [
                     {
                         "align": 5,
@@ -485,23 +500,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 0,
+                        "crop_bottom": 360,
                         "crop_left": 0,
-                        "crop_right": 0,
+                        "crop_right": 640,
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 19,
                         "locked": true,
                         "name": "Webcam",
                         "pos": {
-                            "x": 1493.333251953125,
+                            "x": 1600.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.3333333432674408,
-                            "y": 0.3333333432674408
+                            "x": 0.25,
+                            "y": 0.25
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -564,6 +579,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Scene] Gaming",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -571,7 +587,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 16,
+                "id_counter": 17,
                 "items": [
                     {
                         "align": 5,
@@ -668,23 +684,23 @@
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
-                        "crop_bottom": 0,
+                        "crop_bottom": 360,
                         "crop_left": 0,
-                        "crop_right": 0,
+                        "crop_right": 640,
                         "crop_top": 0,
                         "group_item_backup": false,
                         "id": 14,
                         "locked": true,
                         "name": "Webcam",
                         "pos": {
-                            "x": 1493.333251953125,
+                            "x": 1600.0,
                             "y": 0.0
                         },
                         "private_settings": {},
                         "rot": 0.0,
                         "scale": {
-                            "x": 0.3333333432674408,
-                            "y": 0.3333333432674408
+                            "x": 0.25,
+                            "y": 0.25
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -735,13 +751,14 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Gaming] Game",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "capture_window": "148897793\r\nMafia ..zzZZ\r\ngame.exe"
+                "capture_window": "14680067\r\nxfce4-panel\r\nxfce4-panel"
             },
             "sync": 0,
             "volume": 1.0
@@ -762,6 +779,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Webcam",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -774,8 +792,8 @@
                     {
                         "align": 5,
                         "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 1280.0,
+                            "y": 720.0
                         },
                         "bounds_align": 0,
                         "bounds_type": 0,
@@ -817,6 +835,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "Razer Kiyo",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -826,7 +845,7 @@
                 "buffering": false,
                 "color_range": 2,
                 "device_id": "/dev/video0",
-                "framerate": 65596,
+                "framerate": 65566,
                 "input": 0,
                 "pixelformat": 842093913,
                 "resolution": 83886800
@@ -851,6 +870,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Gaming] Headphones",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,
@@ -879,6 +899,7 @@
             "monitoring_type": 0,
             "muted": false,
             "name": "[Tech] Headphones",
+            "prev_ver": 402653187,
             "private_settings": {},
             "push-to-mute": false,
             "push-to-mute-delay": 0,

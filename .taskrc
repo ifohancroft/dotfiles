@@ -29,15 +29,16 @@ data.location=~/.task
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
-report.ifohancroft.columns=id,start.age,depends,project,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.ifohancroft.columns=description,project,tags,id,depends
 report.ifohancroft.description=ifohancroft's custom report
 report.ifohancroft.filter=status:pending limit:page
-report.ifohancroft.labels=ID,Active,Deps,Project,Tags,Recur,S,Due,Until,Description,Priority
+report.ifohancroft.labels=Description,Project,Tags,ID,Depends
 report.ifohancroft.sort=project,depends,urgency-
 urgency.active.coefficient=0
 urgency.age.coefficient=0
 urgency.annotations.coefficient=0
 urgency.tags.coefficient=0
+urgency.project.coefficient=0
 urgency.uda.priority.10.coefficient=10
 urgency.uda.priority.9.coefficient=9
 urgency.uda.priority.8.coefficient=8
@@ -56,3 +57,6 @@ dateformat=D-M-Y
 dateformat.edit=D-M-Y H:N:S
 dateformat.holiday=DMY
 dateformat.info=D-M-Y H:N:S
+alias.remove=delete
+verbose=blank,footnote,label,new-id,new-uuid,affected,edit,special,project,sync,unwait,recur
+editor=vim

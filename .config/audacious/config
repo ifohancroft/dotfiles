@@ -1,4 +1,7 @@
 
+[audacious]
+show_interface=FALSE
+
 [audgui]
 filebrowser_win=621,271,672,480
 filesel_path=/home/ifohancroft
@@ -47,10 +50,10 @@ NumHotkeys=7
 column_widths=10,275,175,10,175,175,10,100,39,10,275,275,275,10,275
 infoarea_show_vis=FALSE
 infoarea_visible=FALSE
-player_height=1015
-player_width=624
-player_x=648
-player_y=49
+player_height=613
+player_width=910
+player_x=2920
+player_y=33
 playlist_columns=artist album title length
 playlist_tabs_visible=FALSE
 statusbar_visible=FALSE

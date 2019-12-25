@@ -132,14 +132,15 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="1.26269"
-         height="382.595"
+         width="891.429"
+         height="700"
          rx="0"
          ry="0" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
-         usecurrent="1">
+         usecurrent="1"
+         persp="perspective813">
         <side
            id="XYfront"
            style="fill:#8686bf;stroke:none;stroke-linejoin:round;"
@@ -171,8 +172,9 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="15"
-         ry="15" />
+         rx="123.571"
+         ry="123.571"
+         open="0" />
       <eventcontext
          id="star"
          magnitude="3"
@@ -338,8 +340,8 @@
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
        selcue="1">
       <group
-         id="lineheight"
-         display_unit="0" />
+         display_unit="0"
+         id="lineheight" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -425,18 +427,18 @@
        offset="0"
        offsetunits="mm" />
     <group
-       id="measure"
-       fontsize="10"
-       precision="5"
-       scale="100"
-       offset="5"
-       unit="px"
-       measure-start="170.426,130.286"
-       measure-end="223.338,130.286"
-       show_hidden="0"
-       show_in_between="0"
+       all_layers="1"
        ignore_1st_and_last="1"
-       all_layers="1" />
+       show_in_between="0"
+       show_hidden="0"
+       measure-end="2565,289"
+       measure-start="2565,297"
+       unit="px"
+       offset="5"
+       scale="100"
+       precision="5"
+       fontsize="10"
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -581,14 +583,14 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="1"
+       page="0"
        x="0"
        y="0"
-       w="409"
-       h="439"
-       visible="0"
+       w="325"
+       h="382"
+       visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="filtereffects" />
     <group
@@ -604,15 +606,27 @@
        rotateCounterClockwise="1"
        x="0"
        y="0"
-       w="379"
-       h="205"
+       w="350"
+       h="194"
        visible="0"
        state="2"
        placement="1" />
     <group
        id="align" />
     <group
-       id="xml" />
+       id="xml"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="613"
+       y="0"
+       w="1303"
+       h="620"
+       visible="0"
+       state="1"
+       placement="1" />
     <group
        id="find"
        panel_size="1"
@@ -641,10 +655,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="1146"
-       y="198"
-       w="601"
-       h="786"
+       x="2792"
+       y="214"
+       w="687"
+       h="632"
        visible="0"
        placement="1" />
     <group
@@ -655,8 +669,8 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="43"
-       x="437"
+       page="9"
+       x="2357"
        y="247"
        w="1045"
        h="646" />
@@ -689,13 +703,13 @@
        x="0"
        y="0"
        w="331"
-       h="485"
-       visible="1"
+       h="447"
+       visible="0"
        state="2"
-       placement="5">
+       placement="1">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="96" />
@@ -705,7 +719,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Keyboards/My ErgoDox/Case"
+       path="/home/ifohancroft/Assets/g502 Skin Templates"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -716,11 +730,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="" />
+       path="/home/ifohancroft/Projects/Keyboards/ErgoDox GG/" />
     <group
        id="import"
        enable_preview="1"
-       path="/home/ifohancroft/Desktop/"
+       path="/home/ifohancroft/Assets/g502 Skin Templates/"
        ask="1"
        link="embed"
        scale="auto"
@@ -757,8 +771,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="331"
-       h="152"
+       w="327"
+       h="153"
        visible="1"
        state="2"
        placement="2" />
@@ -772,10 +786,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="955"
-       y="134"
-       w="586"
-       h="391"
+       x="3175"
+       y="0"
+       w="569"
+       h="373"
        visible="0"
        placement="1" />
     <group
@@ -793,8 +807,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="331"
-       h="485"
+       w="325"
+       h="382"
        visible="1"
        state="2"
        placement="5" />
@@ -804,19 +818,19 @@
        on-blur="0.50"
        animate-time="100" />
     <group
-       placement="1"
-       state="1"
-       visible="0"
-       h="601"
-       w="277"
-       y="0"
-       x="1198"
-       panel_border="0"
-       panel_wrap="0"
-       panel_mode="1"
-       panel_ratio="100"
+       id="objects"
        panel_size="1"
-       id="objects" />
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="0"
+       y="0"
+       w="229"
+       h="430"
+       visible="0"
+       state="2"
+       placement="1" />
   </group>
   <group
      id="printing">
@@ -1105,11 +1119,11 @@
     <group
        id="rendering" />
     <group
-       value="1"
-       id="savedialogposition" />
+       id="savedialogposition"
+       value="1" />
     <group
-       numthreads="8"
-       id="threading" />
+       id="threading"
+       numthreads="8" />
   </group>
   <group
      id="extensions"
@@ -1137,12 +1151,12 @@
      org.inkscape.print.latex.destination="/tmp/inkscape-clipboard-export" />
   <group
      id="desktop"
-     style="line-height:1.25;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1;font-size:26px;fill-rule:nonzero;stroke-width:1.0015748;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;stroke-linejoin:miter;paint-order:markers stroke fill">
+     style="line-height:1.25;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-size:26px;fill-rule:nonzero;stroke-width:32.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:miter;paint-order:markers stroke fill;opacity:1">
     <group
-       width="640"
-       height="480"
+       width="1920"
+       height="1025"
        x="0"
-       y="31"
+       y="55"
        fullscreen="0"
        id="geometry"
        maximized="1" />

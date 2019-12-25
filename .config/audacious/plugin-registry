@@ -148,6 +148,22 @@ enabled 1
 scheme aac
 subtunes 0
 writes 0
+input /usr/lib/audacious/Input/amidi-plug.so
+stamp 1564753423
+version 48
+flags 0
+name AMIDI-Plug (MIDI Player)
+domain audacious-plugins
+priority 0
+about 1
+config 1
+enabled 1
+scheme mid
+scheme midi
+scheme rmi
+scheme rmid
+subtunes 0
+writes 0
 input /usr/lib/audacious/Input/cdaudio-ng.so
 stamp 1564753423
 version 48
