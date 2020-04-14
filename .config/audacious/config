@@ -1,10 +1,11 @@
 
 [audacious]
+open_to_temporary=FALSE
 show_interface=FALSE
 
 [audgui]
 filebrowser_win=621,271,672,480
-filesel_path=/home/ifohancroft
+filesel_path=/home/ifohancroft/Music/MC Frontalot
 jump_to_track_win=672,316,576,480
 
 [globalHotkey]
@@ -53,13 +54,16 @@ infoarea_visible=FALSE
 player_height=613
 player_width=910
 player_x=2920
-player_y=33
+player_y=31
 playlist_columns=artist album title length
 playlist_tabs_visible=FALSE
 statusbar_visible=FALSE
 
 [gtkui-layout]
 item_count=0
+
+[skins]
+skin=/usr/share/audacious/Skins/Default
 
 [song_change]
 cmd_line=echo "%a - %T " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt

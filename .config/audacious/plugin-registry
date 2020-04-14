@@ -679,7 +679,7 @@ about 1
 config 1
 enabled 1
 general /usr/lib/audacious/General/lirc.so
-stamp 1546169942
+stamp 1564753423
 version 48
 flags 0
 name LIRC Plugin

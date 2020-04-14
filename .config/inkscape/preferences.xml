@@ -132,8 +132,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="891.429"
-         height="700"
+         width="1128.45"
+         height="796.689"
          rx="0"
          ry="0" />
       <eventcontext
@@ -172,8 +172,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="123.571"
-         ry="123.571"
+         rx="5.66929"
+         ry="5.66929"
          open="0" />
       <eventcontext
          id="star"
@@ -329,7 +329,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="mm"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -337,8 +337,9 @@
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
-       selcue="1">
+       style="fill:black;fill-opacity:1;stroke:none;font-family:'Another Mans Treasure MIA Raw';font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:'Another Mans Treasure MIA Raw';font-stretch:normal;font-variant:normal"
+       selcue="1"
+       align_mode="2">
       <group
          display_unit="0"
          id="lineheight" />
@@ -352,17 +353,17 @@
        pathflash_unselected="0"
        pathflash_timeout="500"
        show_handles="1"
-       show_outline="0"
+       show_outline="1"
        sculpting_profile="1"
        single_node_transform_handles="0"
-       show_transform_handles="0"
+       show_transform_handles="1"
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
        x="0"
        y="0"
-       edit_clipping_paths="0"
-       edit_masks="0" />
+       edit_clipping_paths="1"
+       edit_masks="1" />
     <eventcontext
        id="tweak"
        selcue="0"
@@ -431,9 +432,9 @@
        ignore_1st_and_last="1"
        show_in_between="0"
        show_hidden="0"
-       measure-end="2565,289"
-       measure-start="2565,297"
-       unit="px"
+       measure-end="0,0"
+       measure-start="0,0"
+       unit="mm"
        offset="5"
        scale="100"
        precision="5"
@@ -583,16 +584,28 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="0"
+       page="1"
        x="0"
        y="0"
        w="325"
-       h="382"
-       visible="1"
+       h="529"
+       visible="0"
        state="2"
-       placement="5" />
+       placement="1" />
     <group
-       id="filtereffects" />
+       id="filtereffects"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="2894"
+       y="0"
+       w="942"
+       h="438"
+       visible="0"
+       state="1"
+       placement="1" />
     <group
        id="textandfont" />
     <group
@@ -612,7 +625,21 @@
        state="2"
        placement="1" />
     <group
-       id="align" />
+       id="align"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       sel-as-groups="0"
+       align-to="1"
+       x="2593"
+       y="0"
+       w="260"
+       h="525"
+       visible="0"
+       state="1"
+       placement="1" />
     <group
        id="xml"
        panel_size="1"
@@ -620,10 +647,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="613"
+       x="1920"
        y="0"
-       w="1303"
-       h="620"
+       w="1916"
+       h="999"
        visible="0"
        state="1"
        placement="1" />
@@ -655,8 +682,8 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="2792"
-       y="214"
+       x="2512"
+       y="313"
        w="687"
        h="632"
        visible="0"
@@ -669,9 +696,9 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="9"
-       x="2357"
-       y="247"
+       page="12"
+       x="437"
+       y="245"
        w="1045"
        h="646" />
     <group
@@ -702,24 +729,24 @@
        panel_border="0"
        x="0"
        y="0"
-       w="331"
-       h="447"
+       w="344"
+       h="445"
        visible="0"
        state="2"
        placement="1">
       <group
          id="exportarea"
-         value="drawing" />
+         value="page" />
       <group
          id="defaultxdpi"
-         value="96" />
+         value="300" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Assets/g502 Skin Templates"
+       path="/home/ifohancroft/Projects/COVID Ventilator/Mockups"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -734,7 +761,7 @@
     <group
        id="import"
        enable_preview="1"
-       path="/home/ifohancroft/Assets/g502 Skin Templates/"
+       path="/home/ifohancroft/Desktop/"
        ask="1"
        link="embed"
        scale="auto"
@@ -743,7 +770,23 @@
        id="debug"
        redirect="0" />
     <group
-       id="clonetiler" />
+       id="clonetiler"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       fillrect="0"
+       jmax="8"
+       imax="5"
+       fillwidth="11.5276"
+       x="1051"
+       y="0"
+       w="459"
+       h="540"
+       visible="0"
+       state="1"
+       placement="1" />
     <group
        id="gridtiler" />
     <group
@@ -771,8 +814,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="327"
-       h="153"
+       w="242"
+       h="487"
        visible="1"
        state="2"
        placement="2" />
@@ -807,11 +850,11 @@
        panel_border="0"
        x="0"
        y="0"
-       w="325"
-       h="382"
+       w="242"
+       h="303"
        visible="1"
        state="2"
-       placement="5" />
+       placement="1" />
     <group
        id="transparency"
        on-focus="1.0"
@@ -824,12 +867,26 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="0"
+       x="2880"
        y="0"
-       w="229"
-       h="430"
+       w="631"
+       h="648"
        visible="0"
-       state="2"
+       state="1"
+       placement="1" />
+    <group
+       id="livepatheffect"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="3620"
+       y="0"
+       w="216"
+       h="154"
+       visible="0"
+       state="1"
        placement="1" />
   </group>
   <group
@@ -984,7 +1041,7 @@
        value="0" />
     <group
        id="clonecompensation"
-       value="1" />
+       value="0" />
     <group
        id="cloneorphans"
        value="0" />
@@ -1148,10 +1205,17 @@
      org.inkscape.print.wmf.FixPPTPatternAsHatch="0"
      org.inkscape.print.wmf.textToPath="1"
      org.inkscape.print.wmf.destination="/tmp/inkscape-clipboard-export"
-     org.inkscape.print.latex.destination="/tmp/inkscape-clipboard-export" />
+     org.inkscape.print.latex.destination="/tmp/inkscape-clipboard-export"
+     org.inkscape.effect.filter.ColorDropShadow.blur="3"
+     org.inkscape.effect.filter.ColorDropShadow.xoffset="6"
+     org.inkscape.effect.filter.ColorDropShadow.yoffset="6"
+     org.inkscape.effect.filter.ColorDropShadow.type="outer"
+     org.inkscape.effect.filter.Blur.hblur="2"
+     org.inkscape.effect.filter.Blur.vblur="2"
+     org.inkscape.effect.filter.Blur.__live_effect__="0" />
   <group
      id="desktop"
-     style="line-height:1.25;fill:none;fill-opacity:1;stroke:#000000;stroke-opacity:1;font-size:26px;fill-rule:nonzero;stroke-width:32.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:miter;paint-order:markers stroke fill;opacity:1">
+     style="line-height:1.25;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1;font-size:66.66666667px;fill-rule:nonzero;stroke-width:9.82677165;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:round;stroke-linejoin:miter;paint-order:markers stroke fill;opacity:1;text-anchor:end;text-align:end">
     <group
        width="1920"
        height="1025"
