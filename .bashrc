@@ -3,7 +3,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 alias search='googler --url-handler dump-content google'
-alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='git --git-dir=$XDG_DATA_HOME/dotfiles/ --work-tree=$HOME'
 alias ls='ls --color=auto --group-directories-first'
 alias diff='diff --color=auto'
 alias grep='grep --color=auto'
