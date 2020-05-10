@@ -1,13 +1,6 @@
 " enter the current millenium
 set nocompatible
 
-" Clean up ~/
-set undodir=$XDG_DATA_HOME/vim/undo
-set directory=$XDG_DATA_HOME/vim/swap
-set backupdir=$XDG_DATA_HOME/vim/backup
-set viminfo+='1000,n$XDG_DATA_HOME/vim/viminfo
-set runtimepath=$XDG_CONFIG_HOME/vim
-
 " Formatting
 set smartindent
 set autoindent

@@ -21,7 +21,6 @@ export TASKDATA="$XDG_DATA_HOME"/task
 export TASKRC="$XDG_CONFIG_HOME"/task/taskrc
 export WEECHAT_HOME="$XDG_CONFIG_HOME"/weechat
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
-export VIMINIT=":source $XDG_CONFIG_HOME"/vim/vimrc
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 eval $(dircolors "$XDG_CONFIG_HOME"/dircolors)
 
