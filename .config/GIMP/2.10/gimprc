@@ -41,12 +41,11 @@
 (theme "System")
 (icon-theme "Color")
 (user-manual-online yes)
-(image-convert-indexed-palette-type mono)
+(image-convert-indexed-palette-type custom)
 (image-convert-indexed-max-colors 2)
 (image-resize-fill-type white)
 (image-resize-layer-set all)
 (layer-new-name "Background")
-(layer-new-fill-type white)
 (channel-new-name "Alpha")
 (fill-options
     (style solid)

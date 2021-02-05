@@ -14,8 +14,11 @@ alias gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg'
 alias checkSpace='ncdu'
 
 shopt -s histappend
-PROMPT_COMMAND='echo -ne "\033]0;Termite: ${PWD/#$HOME/\~}\007"'
 
-#PS1="[\u@\h $(corona) \w]\\$ "
+if [ "$TERM" = "xterm" ]; then
+    PS1='echo -ne "\033]2;XTerm: ${PWD/#$HOME/\~}\233"'
+fi
 PS1="[\u@\h \w]\\$ "
 
+# Clear scrollback and reset
+bind -x '"\C-k":printf "\e[2J\e[3J\e[;H"'

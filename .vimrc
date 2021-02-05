@@ -1,6 +1,3 @@
-" enter the current millenium
-set nocompatible
-
 " Formatting
 set smartindent
 set autoindent
@@ -20,9 +17,12 @@ colorscheme nighted
 " Misc
 let &titlestring = "Vim " . expand("%:t") . " @ " . hostname()
 set title
-let &iconstring = "vim"
-set icon
+"let &iconstring = "gvim"
+"set icon
 
 " Gamer Fix
 nnoremap G gg
 nnoremap gg G
+
+filetype plugin indent on
+

@@ -1,56 +1,12 @@
-# [Created by task 2.5.1 8/11/2019 01:55:57]
-# Taskwarrior program configuration file.
-# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-color',
-# 'man task-sync' or 'man taskrc'
-
-# Here is an example of entries that use the default, override and blank values
-#   variable=foo   -- By specifying a value, this overrides the default
-#   variable=      -- By specifying no value, this means no default
-#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
-
-# Use the command 'task show' to see all defaults and overrides
-
-# Files
-data.location=~/.task
-
-# Color theme (uncomment one to use)
-#include /usr/share/doc/task/rc/light-16.theme
-#include /usr/share/doc/task/rc/light-256.theme
-#include /usr/share/doc/task/rc/dark-16.theme
-#include /usr/share/doc/task/rc/dark-256.theme
-#include /usr/share/doc/task/rc/dark-red-256.theme
-#include /usr/share/doc/task/rc/dark-green-256.theme
-#include /usr/share/doc/task/rc/dark-blue-256.theme
-#include /usr/share/doc/task/rc/dark-violets-256.theme
-#include /usr/share/doc/task/rc/dark-yellow-green.theme
-#include /usr/share/doc/task/rc/dark-gray-256.theme
-#include /usr/share/doc/task/rc/dark-gray-blue-256.theme
-#include /usr/share/doc/task/rc/solarized-dark-256.theme
-#include /usr/share/doc/task/rc/solarized-light-256.theme
-#include /usr/share/doc/task/rc/no-color.theme
-
-report.ifohancroft.columns=description,project,tags,id,depends
+data.location="$XDG_DATA_HOME"/task
+report.ifohancroft.columns=id,description,project,tags,depends,priority
 report.ifohancroft.description=ifohancroft's custom report
-report.ifohancroft.filter=status:pending limit:page
-report.ifohancroft.labels=Description,Project,Tags,ID,Depends
-report.ifohancroft.sort=project,depends,urgency-
-urgency.active.coefficient=0
-urgency.age.coefficient=0
-urgency.annotations.coefficient=0
-urgency.tags.coefficient=0
-urgency.project.coefficient=0
-urgency.uda.priority.10.coefficient=10
-urgency.uda.priority.9.coefficient=9
-urgency.uda.priority.8.coefficient=8
-urgency.uda.priority.7.coefficient=7
-urgency.uda.priority.6.coefficient=6
-urgency.uda.priority.5.coefficient=5
-urgency.uda.priority.4.coefficient=4
-urgency.uda.priority.3.coefficient=3
-urgency.uda.priority.2.coefficient=2
-urgency.uda.priority.1.coefficient=1
+report.ifohancroft.filter=status:pending
+report.ifohancroft.labels=ID,Description,Project,Tags,Depends,Priority
+report.ifohancroft.sort=project,depends,priority-
 uda.priority.type=numeric
-uda.priority.values=10,9,8,7,6,5,4,3,2,1,
+uda.priority.label=Priority
+uda.priority.values=100,99,98,97,96,95,94,93,92,91,90,89,88,87,86,85,84,83,82,81,80,79,78,77,76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,30,29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,
 default.command=ifohancroft
 weekstart=monday
 dateformat=D-M-Y
@@ -58,5 +14,7 @@ dateformat.edit=D-M-Y H:N:S
 dateformat.holiday=DMY
 dateformat.info=D-M-Y H:N:S
 alias.remove=delete
-verbose=blank,footnote,label,new-id,new-uuid,affected,edit,special,project,sync,unwait,recur
+verbose=blank,footnote,label,new-id,affected,edit,special,project,sync
 editor=vim
+nag=
+

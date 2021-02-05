@@ -8,7 +8,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
+export JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 export ICEAUTHORITY="$XDG_CACHE_HOME"/ICEauthority
@@ -19,6 +19,7 @@ export HISTSIZE=10000
 export HISTFILESIZE=10000
 export TASKDATA="$XDG_DATA_HOME"/task
 export TASKRC="$XDG_CONFIG_HOME"/task/taskrc
+export VIT_DIR="$XDG_CONFIG_HOME"/vit
 export WEECHAT_HOME="$XDG_CONFIG_HOME"/weechat
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg

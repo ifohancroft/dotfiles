@@ -2,28 +2,25 @@
 [audacious]
 cover_name_exclude=
 enable_replay_gain=FALSE
-show_interface=FALSE
 
 [audgui]
-filesel_path=/home/ifohancroft/Music/Wumpscut/Madman Szpital Box/CD1
+filesel_path=/home/ifohancroft/Music
 
 [skins]
 equalizer_visible=TRUE
-equalizer_x=3560
-equalizer_y=147
-player_x=3560
-player_y=31
+equalizer_x=3565
+equalizer_y=143
+player_x=3565
+player_y=27
 playlist_visible=TRUE
-playlist_x=3560
-playlist_y=263
+playlist_x=3565
+playlist_y=259
 skin=/usr/share/audacious/Skins/Refugee
 
 [skins-layout]
+playlist-manager-qt=3550,27,288,192
 search-tool-qt=2731,415,288,192
 
 [song_change]
 cmd_line=echo "%a - %T " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt
 cmd_line_after=echo "No song currently playing " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt
-
-[statusicon]
-close_to_tray=TRUE

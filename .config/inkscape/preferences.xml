@@ -13,7 +13,7 @@
        state="1" />
     <group
        id="commands"
-       state="1" />
+       state="0" />
     <group
        id="snaptoolbox"
        state="1" />
@@ -128,8 +128,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="1194.33"
-         height="1542.05" />
+         width="3.5"
+         height="26.8346" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -164,7 +164,9 @@
          style="fill:red;"
          end="0"
          start="0"
-         usecurrent="1" />
+         usecurrent="1"
+         rx="946.84"
+         ry="946.84" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -174,7 +176,8 @@
          id="spiral"
          style="fill:none;stroke:black"
          expansion="1"
-         usecurrent="0" />
+         usecurrent="0"
+         revolution="3" />
     </group>
     <group
        id="freehand"
@@ -321,8 +324,9 @@
        font_sample="AaBbCcIiPpQq12369$\342\202\254\302\242?.;/()"
        show_sample_in_list="1"
        use_svg2="1"
-       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;"
-       selcue="1" />
+       style="line-height:1.25;font-family:'RobotoMono Nerd Font Mono';font-size:40px;-inkscape-font-specification:'RobotoMono Nerd Font Mono';"
+       selcue="1"
+       align_mode="1" />
     <eventcontext
        id="nodes"
        selcue="1"
@@ -398,6 +402,12 @@
        id="paintbucket"
        style="fill:#a0a0a0;stroke:none;"
        usecurrent="1" />
+    <group
+       id="measure"
+       measure-start="0,6.70866"
+       measure-end="0,13.4173"
+       fontsize="10"
+       unit="mm" />
   </group>
   <group
      id="palette">
@@ -539,13 +549,20 @@
        page="1"
        x="0"
        y="0"
-       w="358"
-       h="424"
+       w="378"
+       h="441"
        visible="0"
        state="2"
        placement="5" />
     <group
-       id="filtereffects" />
+       id="filtereffects"
+       x="619"
+       y="511"
+       w="376"
+       h="258"
+       visible="0"
+       state="1"
+       placement="1" />
     <group
        id="textandfont"
        x="0"
@@ -557,11 +574,31 @@
        placement="5" />
     <group
        id="transformation"
-       applyseparately="0" />
+       applyseparately="0"
+       rotateCounterClockwise="1"
+       x="0"
+       y="0"
+       w="519"
+       h="205"
+       visible="0"
+       state="2"
+       placement="5" />
     <group
-       id="align" />
+       id="align"
+       x="0"
+       y="0"
+       w="365"
+       h="417" />
     <group
-       id="xml" />
+       id="xml"
+       x="1"
+       y="41"
+       w="1918"
+       h="1025"
+       visible="0"
+       state="1"
+       placement="1"
+       panedpos="683" />
     <group
        id="find" />
     <group
@@ -572,16 +609,16 @@
     <group
        id="documentoptions"
        state="1"
-       x="474"
-       y="228"
-       w="663"
-       h="774"
+       x="1249"
+       y="0"
+       w="671"
+       h="795"
        visible="0"
        placement="1" />
     <group
        id="preferences"
        state="1"
-       page="24"
+       page="7"
        x="492"
        y="149"
        w="936"
@@ -599,9 +636,9 @@
        path=""
        x="0"
        y="0"
-       w="423"
-       h="726"
-       visible="0"
+       w="432"
+       h="470"
+       visible="1"
        state="2"
        placement="5">
       <group
@@ -609,14 +646,14 @@
          value="page" />
       <group
          id="defaultxdpi"
-         value="298.22" />
+         value="300" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Tux"
+       path="/home/ifohancroft/Projects/Pi Case 40/PiCase40-GPIO-Sticker"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -631,11 +668,13 @@
     <group
        id="import"
        enable_preview="1"
-       path=""
+       path="/home/ifohancroft/Projects/SmallRig Swivel and Tilt Monitor Mount with a Monitor Clamp/Reference/"
        ask="1"
        ask_svg="1"
-       link="link"
-       scale="optimizeSpeed" />
+       link="embed"
+       scale="auto"
+       import_mode_svg="include"
+       forcexdpi="0" />
     <group
        id="debug"
        redirect="0" />
@@ -661,18 +700,24 @@
     <group
        id="layers"
        maxDepth="20"
-       x="1685"
-       y="393"
-       w="225"
-       h="453"
+       x="0"
+       y="0"
+       w="432"
+       h="470"
        visible="1"
        state="2"
-       placement="2" />
+       placement="5" />
     <group
        id="extensioneditor" />
     <group
        id="trace"
-       state="1" />
+       state="1"
+       x="2605"
+       y="326"
+       w="549"
+       h="428"
+       visible="0"
+       placement="1" />
     <group
        id="script" />
     <group
@@ -683,8 +728,8 @@
        id="undo-history"
        x="0"
        y="0"
-       w="225"
-       h="299"
+       w="432"
+       h="95"
        visible="1"
        state="2"
        placement="1" />
@@ -698,7 +743,10 @@
        add-label-comments="0" />
   </group>
   <group
-     id="options">
+     id="options"
+     dpifixbackup="1"
+     dpiupdatemethod="0"
+     onimport="0">
     <group
        id="renderingcache"
        size="512" />
@@ -731,7 +779,7 @@
        value="36" />
     <group
        id="cursortolerance"
-       value="8.0" />
+       value="8" />
     <group
        id="dragtolerance"
        value="4.0" />
@@ -963,20 +1011,25 @@
        partialdynamic="0" />
     <group
        id="rendering" />
+    <group
+       id="font"
+       unitType="1" />
   </group>
   <group
      id="extensions"
      org.inkscape.webdesign.interactive_mockup.when="onclick"
      org.inkscape.webdesign.interactive_mockup.__live_effect__="0"
-     org.inkscape.webdesign.interactive_mockup.tab="Options" />
+     org.inkscape.webdesign.interactive_mockup.tab="Options"
+     org.inkscape.input.dxf_input.encoding="latin_1"
+     org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5" />
   <group
      id="desktop"
-     style="fill:#000000;stroke-width:12">
+     style="fill:#ff0000;stroke-width:1.0015748;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:4px;text-anchor:middle;text-align:center;font-style:italic">
     <group
-       width="1920"
-       height="1049"
+       width="1918"
+       height="1024"
        x="0"
-       y="31"
+       y="27"
        fullscreen="0"
        id="geometry"
        maximized="1" />
@@ -1078,8 +1131,8 @@
      language="" />
   <group
      id="theme"
-     defaultTheme="Matcha-dark-azul"
-     defaultIconTheme="Papirus-Dark-Maia"
+     defaultTheme="BlueMenta"
+     defaultIconTheme="mate"
      gtkTheme="Matcha-dark-azul"
      iconTheme="Papirus-Dark-Maia"
      menuIcons_canvas="0"
