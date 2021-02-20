@@ -128,8 +128,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="3.5"
-         height="26.8346" />
+         width="0.574524"
+         height="1.88976" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -315,7 +315,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -324,7 +324,7 @@
        font_sample="AaBbCcIiPpQq12369$\342\202\254\302\242?.;/()"
        show_sample_in_list="1"
        use_svg2="1"
-       style="line-height:1.25;font-family:'RobotoMono Nerd Font Mono';font-size:40px;-inkscape-font-specification:'RobotoMono Nerd Font Mono';"
+       style="line-height:1.25;font-family:'Overpass Nerd Font';font-size:40px;-inkscape-font-specification:'Overpass Nerd Font';"
        selcue="1"
        align_mode="1" />
     <eventcontext
@@ -404,8 +404,8 @@
        usecurrent="1" />
     <group
        id="measure"
-       measure-start="0,6.70866"
-       measure-end="0,13.4173"
+       measure-start="674.646,729.07"
+       measure-end="674.646,734.361"
        fontsize="10"
        unit="mm" />
   </group>
@@ -591,14 +591,15 @@
        h="417" />
     <group
        id="xml"
-       x="1"
-       y="41"
+       x="2"
+       y="0"
        w="1918"
-       h="1025"
+       h="1024"
        visible="0"
        state="1"
        placement="1"
-       panedpos="683" />
+       panedpos="683"
+       attrtoggler="1" />
     <group
        id="find" />
     <group
@@ -609,10 +610,10 @@
     <group
        id="documentoptions"
        state="1"
-       x="1249"
+       x="1245"
        y="0"
-       w="671"
-       h="795"
+       w="675"
+       h="811"
        visible="0"
        placement="1" />
     <group
@@ -643,17 +644,17 @@
        placement="5">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="300" />
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svg.inkscape"
+       default="org.inkscape.output.pdf.cairorenderer"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Pi Case 40/PiCase40-GPIO-Sticker"
+       path="/home/ifohancroft/Desktop"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -664,7 +665,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Tux/" />
+       path="/tmp/.mount_FreeCAdMo40t/usr/share/Mod/TechDraw/Templates/" />
     <group
        id="import"
        enable_preview="1"
@@ -1014,6 +1015,9 @@
     <group
        id="font"
        unitType="1" />
+    <group
+       id="middlemousezoom"
+       value="1" />
   </group>
   <group
      id="extensions"
@@ -1024,7 +1028,7 @@
      org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5" />
   <group
      id="desktop"
-     style="fill:#ff0000;stroke-width:1.0015748;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:4px;text-anchor:middle;text-align:center;font-style:italic">
+     style="fill:#ff0000;stroke-width:1.0015748;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:11.33858268px;text-anchor:middle;text-align:center;font-style:italic;">
     <group
        width="1918"
        height="1024"
