@@ -13,6 +13,7 @@
     (factory-entry "gimp-single-image-window")
     (position 0 27)
     (size 1920 1025)
+    (monitor 1)
     (open-on-exit)
     (aux-info
         (left-docks-width "44")
@@ -30,7 +31,7 @@
                     (show-button-bar "true"))))
         (book
             (position 525)
-            (current-page 0)
+            (current-page 1)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
                 (preview-size 32)

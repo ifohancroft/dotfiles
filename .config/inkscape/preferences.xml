@@ -610,8 +610,8 @@
     <group
        id="documentoptions"
        state="1"
-       x="1245"
-       y="0"
+       x="494"
+       y="238"
        w="675"
        h="811"
        visible="0"
@@ -638,13 +638,13 @@
        x="0"
        y="0"
        w="432"
-       h="470"
-       visible="1"
+       h="479"
+       visible="0"
        state="2"
        placement="5">
       <group
          id="exportarea"
-         value="drawing" />
+         value="page" />
       <group
          id="defaultxdpi"
          value="300" />
@@ -703,11 +703,11 @@
        maxDepth="20"
        x="0"
        y="0"
-       w="432"
-       h="470"
+       w="227"
+       h="226"
        visible="1"
        state="2"
-       placement="5" />
+       placement="2" />
     <group
        id="extensioneditor" />
     <group
@@ -729,7 +729,7 @@
        id="undo-history"
        x="0"
        y="0"
-       w="432"
+       w="227"
        h="95"
        visible="1"
        state="2"
@@ -1030,13 +1030,13 @@
      id="desktop"
      style="fill:#ff0000;stroke-width:1.0015748;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:11.33858268px;text-anchor:middle;text-align:center;font-style:italic;">
     <group
-       width="1918"
-       height="1024"
+       width="744"
+       height="480"
        x="0"
        y="27"
        fullscreen="0"
        id="geometry"
-       maximized="1" />
+       maximized="0" />
     <group
        id="XYfront" />
     <group

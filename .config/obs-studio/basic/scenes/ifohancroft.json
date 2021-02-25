@@ -223,7 +223,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Second Camera",
+            "name": "Camera",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -231,17 +231,18 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
+                "Exposure (Absolute)": 3,
                 "Exposure, Auto": 1,
-                "Exposure, Auto Priority": false,
                 "Focus, Auto": false,
                 "Power Line Frequency": 1,
+                "White Balance Temperature": 4500,
                 "White Balance Temperature, Auto": false,
                 "buffering": false,
                 "color_range": 1,
-                "device_id": "/dev/video0",
-                "framerate": 65596,
+                "device_id": "/dev/video2",
+                "framerate": 65566,
                 "input": 0,
-                "pixelformat": 842094169,
+                "pixelformat": 842093913,
                 "resolution": 83886800
             },
             "sync": 0,
@@ -257,19 +258,15 @@
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Camera": [],
-                "libobs.hide_scene_item.Desktop": [],
-                "libobs.hide_scene_item.Notifications": [],
                 "libobs.hide_scene_item.Second Camera": [],
                 "libobs.show_scene_item.Camera": [],
-                "libobs.show_scene_item.Desktop": [],
-                "libobs.show_scene_item.Notifications": [],
                 "libobs.show_scene_item.Second Camera": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Tech",
+            "name": "Testing",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -278,7 +275,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 9,
+                "id_counter": 4,
                 "items": [
                     {
                         "align": 5,
@@ -295,7 +292,7 @@
                         "group_item_backup": false,
                         "id": 4,
                         "locked": true,
-                        "name": "Desktop",
+                        "name": "Second Camera",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -305,64 +302,6 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 9,
-                        "locked": true,
-                        "name": "Second Camera",
-                        "pos": {
-                            "x": 1440.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.375,
-                            "y": 0.375
-                        },
-                        "scale_filter": "disable",
-                        "visible": true
-                    },
-                    {
-                        "align": 5,
-                        "bounds": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds_align": 0,
-                        "bounds_type": 0,
-                        "crop_bottom": 0,
-                        "crop_left": 0,
-                        "crop_right": 0,
-                        "crop_top": 0,
-                        "group_item_backup": false,
-                        "id": 5,
-                        "locked": true,
-                        "name": "Camera",
-                        "pos": {
-                            "x": 1440.0,
-                            "y": 0.0
-                        },
-                        "private_settings": {},
-                        "rot": 0.0,
-                        "scale": {
-                            "x": 0.375,
-                            "y": 0.375
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -382,7 +321,7 @@
                         "group_item_backup": false,
                         "id": 2,
                         "locked": true,
-                        "name": "Notifications",
+                        "name": "Camera",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -400,6 +339,89 @@
             },
             "sync": 0,
             "versioned_id": "scene",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "xshm_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Desktop",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "advanced": false
+            },
+            "sync": 0,
+            "versioned_id": "xshm_input",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {
+                "libobs.mute": [],
+                "libobs.push-to-mute": [],
+                "libobs.push-to-talk": [],
+                "libobs.unmute": []
+            },
+            "id": "browser_source",
+            "mixers": 255,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Notifications",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "fps": 60,
+                "height": 1080,
+                "url": "https://streamlabs.com/alert-box/v3/E04F7CA9EFF66BB09395",
+                "width": 1920
+            },
+            "sync": 0,
+            "versioned_id": "browser_source",
+            "volume": 1.0
+        },
+        {
+            "balance": 0.5,
+            "deinterlace_field_order": 0,
+            "deinterlace_mode": 0,
+            "enabled": true,
+            "flags": 0,
+            "hotkeys": {},
+            "id": "xcomposite_input",
+            "mixers": 0,
+            "monitoring_type": 0,
+            "muted": false,
+            "name": "Game",
+            "prev_ver": 419430408,
+            "private_settings": {},
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "settings": {
+                "capture_window": "16777219\r\nTop Panel\r\nmate-panel"
+            },
+            "sync": 0,
+            "versioned_id": "xcomposite_input",
             "volume": 1.0
         },
         {
@@ -562,101 +584,22 @@
             "deinterlace_mode": 0,
             "enabled": true,
             "flags": 0,
-            "hotkeys": {},
-            "id": "xcomposite_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Game",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "capture_window": "16777219\r\nTop Panel\r\nmate-panel"
-            },
-            "sync": 0,
-            "versioned_id": "xcomposite_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "libobs.unmute": []
-            },
-            "id": "browser_source",
-            "mixers": 255,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Notifications",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "fps": 60,
-                "height": 1080,
-                "url": "https://streamlabs.com/alert-box/v3/E04F7CA9EFF66BB09395",
-                "width": 1920
-            },
-            "sync": 0,
-            "versioned_id": "browser_source",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
-            "hotkeys": {},
-            "id": "xshm_input",
-            "mixers": 0,
-            "monitoring_type": 0,
-            "muted": false,
-            "name": "Desktop",
-            "prev_ver": 419430408,
-            "private_settings": {},
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "settings": {
-                "advanced": false
-            },
-            "sync": 0,
-            "versioned_id": "xshm_input",
-            "volume": 1.0
-        },
-        {
-            "balance": 0.5,
-            "deinterlace_field_order": 0,
-            "deinterlace_mode": 0,
-            "enabled": true,
-            "flags": 0,
             "hotkeys": {
                 "OBSBasic.SelectScene": [],
                 "libobs.hide_scene_item.Camera": [],
+                "libobs.hide_scene_item.Desktop": [],
+                "libobs.hide_scene_item.Notifications": [],
                 "libobs.hide_scene_item.Second Camera": [],
                 "libobs.show_scene_item.Camera": [],
+                "libobs.show_scene_item.Desktop": [],
+                "libobs.show_scene_item.Notifications": [],
                 "libobs.show_scene_item.Second Camera": []
             },
             "id": "scene",
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Testing",
+            "name": "Tech",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -665,7 +608,7 @@
             "push-to-talk-delay": 0,
             "settings": {
                 "custom_size": false,
-                "id_counter": 4,
+                "id_counter": 9,
                 "items": [
                     {
                         "align": 5,
@@ -682,7 +625,7 @@
                         "group_item_backup": false,
                         "id": 4,
                         "locked": true,
-                        "name": "Second Camera",
+                        "name": "Desktop",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -692,6 +635,64 @@
                         "scale": {
                             "x": 1.0,
                             "y": 1.0
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 9,
+                        "locked": true,
+                        "name": "Second Camera",
+                        "pos": {
+                            "x": 1440.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.375,
+                            "y": 0.375
+                        },
+                        "scale_filter": "disable",
+                        "visible": true
+                    },
+                    {
+                        "align": 5,
+                        "bounds": {
+                            "x": 1.0,
+                            "y": 1.0
+                        },
+                        "bounds_align": 0,
+                        "bounds_type": 0,
+                        "crop_bottom": 0,
+                        "crop_left": 0,
+                        "crop_right": 0,
+                        "crop_top": 0,
+                        "group_item_backup": false,
+                        "id": 5,
+                        "locked": true,
+                        "name": "Camera",
+                        "pos": {
+                            "x": 1440.0,
+                            "y": 0.0
+                        },
+                        "private_settings": {},
+                        "rot": 0.0,
+                        "scale": {
+                            "x": 0.375,
+                            "y": 0.375
                         },
                         "scale_filter": "disable",
                         "visible": true
@@ -711,7 +712,7 @@
                         "group_item_backup": false,
                         "id": 2,
                         "locked": true,
-                        "name": "Camera",
+                        "name": "Notifications",
                         "pos": {
                             "x": 0.0,
                             "y": 0.0
@@ -742,7 +743,7 @@
             "mixers": 0,
             "monitoring_type": 0,
             "muted": false,
-            "name": "Camera",
+            "name": "Second Camera",
             "prev_ver": 419430408,
             "private_settings": {},
             "push-to-mute": false,
@@ -750,18 +751,17 @@
             "push-to-talk": false,
             "push-to-talk-delay": 0,
             "settings": {
-                "Exposure (Absolute)": 3,
                 "Exposure, Auto": 1,
+                "Exposure, Auto Priority": false,
                 "Focus, Auto": false,
                 "Power Line Frequency": 1,
-                "White Balance Temperature": 4500,
                 "White Balance Temperature, Auto": false,
                 "buffering": false,
                 "color_range": 1,
-                "device_id": "/dev/video2",
-                "framerate": 65566,
+                "device_id": "/dev/video0",
+                "framerate": 65596,
                 "input": 0,
-                "pixelformat": 842093913,
+                "pixelformat": 842094169,
                 "resolution": 83886800
             },
             "sync": 0,
