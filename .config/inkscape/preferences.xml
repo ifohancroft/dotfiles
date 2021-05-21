@@ -128,8 +128,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="0.574524"
-         height="1.88976" />
+         width="3345.63"
+         height="3555.74" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -165,8 +165,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="946.84"
-         ry="946.84" />
+         rx="35.4362"
+         ry="35.4362" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -315,7 +315,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="mm"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -404,10 +404,11 @@
        usecurrent="1" />
     <group
        id="measure"
-       measure-start="674.646,729.07"
-       measure-end="674.646,734.361"
+       measure-start="27.9981,-82.859"
+       measure-end="135.998,-82.859"
        fontsize="10"
-       unit="mm" />
+       unit="mm"
+       precision="5" />
   </group>
   <group
      id="palette">
@@ -546,11 +547,11 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="1"
+       page="0"
        x="0"
        y="0"
        w="378"
-       h="441"
+       h="492"
        visible="0"
        state="2"
        placement="5" />
@@ -574,12 +575,12 @@
        placement="5" />
     <group
        id="transformation"
-       applyseparately="0"
+       applyseparately="1"
        rotateCounterClockwise="1"
        x="0"
        y="0"
-       w="519"
-       h="205"
+       w="369"
+       h="367"
        visible="0"
        state="2"
        placement="5" />
@@ -591,8 +592,8 @@
        h="417" />
     <group
        id="xml"
-       x="2"
-       y="0"
+       x="0"
+       y="56"
        w="1918"
        h="1024"
        visible="0"
@@ -610,7 +611,7 @@
     <group
        id="documentoptions"
        state="1"
-       x="494"
+       x="487"
        y="238"
        w="675"
        h="811"
@@ -619,7 +620,7 @@
     <group
        id="preferences"
        state="1"
-       page="7"
+       page="0"
        x="492"
        y="149"
        w="936"
@@ -629,7 +630,14 @@
     <group
        id="gradienteditor" />
     <group
-       id="object" />
+       id="object"
+       x="0"
+       y="0"
+       w="293"
+       h="330"
+       visible="0"
+       state="2"
+       placement="5" />
     <group
        id="export"
        default=""
@@ -637,14 +645,14 @@
        path=""
        x="0"
        y="0"
-       w="432"
+       w="382"
        h="479"
        visible="0"
        state="2"
        placement="5">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="300" />
@@ -654,7 +662,7 @@
        default="org.inkscape.output.pdf.cairorenderer"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Desktop"
+       path="/home/ifohancroft/Projects/PiCase40-GPIO-PCB"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -665,7 +673,7 @@
     <group
        id="open"
        enable_preview="1"
-       path="/tmp/.mount_FreeCAdMo40t/usr/share/Mod/TechDraw/Templates/" />
+       path="/home/ifohancroft/Desktop/" />
     <group
        id="import"
        enable_preview="1"
@@ -680,7 +688,17 @@
        id="debug"
        redirect="0" />
     <group
-       id="clonetiler" />
+       id="clonetiler"
+       imax="1"
+       keepbbox="0"
+       jmax="10"
+       x="0"
+       y="0"
+       w="591"
+       h="529"
+       visible="0"
+       state="2"
+       placement="5" />
     <group
        id="gridtiler" />
     <group
@@ -703,11 +721,11 @@
        maxDepth="20"
        x="0"
        y="0"
-       w="227"
-       h="226"
+       w="246"
+       h="244"
        visible="1"
        state="2"
-       placement="2" />
+       placement="5" />
     <group
        id="extensioneditor" />
     <group
@@ -729,11 +747,11 @@
        id="undo-history"
        x="0"
        y="0"
-       w="227"
-       h="95"
+       w="246"
+       h="244"
        visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
   </group>
   <group
      id="printing">
@@ -819,7 +837,7 @@
        value="1.414213562" />
     <group
        id="zoomcorrection"
-       value="1.0"
+       value="0.0988"
        unit="mm" />
     <group
        id="keyscroll"
@@ -1009,7 +1027,8 @@
     <group
        id="workarounds"
        colorsontop="0"
-       partialdynamic="0" />
+       partialdynamic="0"
+       dynamicnotdone="1" />
     <group
        id="rendering" />
     <group
@@ -1025,18 +1044,19 @@
      org.inkscape.webdesign.interactive_mockup.__live_effect__="0"
      org.inkscape.webdesign.interactive_mockup.tab="Options"
      org.inkscape.input.dxf_input.encoding="latin_1"
-     org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5" />
+     org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5"
+     org.inkscape.output.pdf.cairorenderer.resolution="300" />
   <group
      id="desktop"
-     style="fill:#ff0000;stroke-width:1.0015748;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:11.33858268px;text-anchor:middle;text-align:center;font-style:italic;">
+     style="fill:#000080;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:12px;text-anchor:middle;text-align:center;font-style:italic;stroke-linecap:square;stroke-width:19.2">
     <group
-       width="744"
-       height="480"
+       width="1918"
+       height="1024"
        x="0"
        y="27"
        fullscreen="0"
        id="geometry"
-       maximized="0" />
+       maximized="1" />
     <group
        id="XYfront" />
     <group
@@ -1137,15 +1157,15 @@
      id="theme"
      defaultTheme="BlueMenta"
      defaultIconTheme="mate"
-     gtkTheme="Matcha-dark-azul"
-     iconTheme="Papirus-Dark-Maia"
+     gtkTheme="Adwaita"
+     iconTheme="hicolor"
      menuIcons_canvas="0"
      menuIcons_layers="0"
      menuIcons_objects="0"
      symbolicIcons="0"
      menuIcons="0"
      preferDarkTheme="0"
-     darkTheme="1">
+     darkTheme="0">
     <group
        id="Papirus-Dark-Maia"
        symbolicBaseColor="842150655"

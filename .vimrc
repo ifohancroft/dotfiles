@@ -8,7 +8,7 @@ set expandtab
 syntax on
 
 " Visual cues
-set number
+" set number
 
 " Theme
 set t_Co=256
@@ -17,12 +17,12 @@ colorscheme nighted
 " Misc
 let &titlestring = "Vim " . expand("%:t") . " @ " . hostname()
 set title
-"let &iconstring = "gvim"
-"set icon
+" let &iconstring = "gvim"
+" set icon
 
 " Gamer Fix
 nnoremap G gg
 nnoremap gg G
 
-filetype plugin indent on
+filetype plugin indent off
 

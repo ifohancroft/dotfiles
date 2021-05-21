@@ -2,7 +2,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-alias search='googler --url-handler dump-content google'
+alias search='googler --url-handler dumpContent google'
 alias dotfiles='git --git-dir=$XDG_DATA_HOME/dotfiles/ --work-tree=$HOME'
 alias ls='ls --color=auto --group-directories-first'
 alias diff='diff --color=auto'
@@ -21,4 +21,4 @@ fi
 PS1="[\u@\h \w]\\$ "
 
 # Clear scrollback and reset
-bind -x '"\C-k":printf "\e[2J\e[3J\e[;H"'
+#bind -x '"\C-k":printf "\e[2J\e[3J\e[;H"'

@@ -3,10 +3,10 @@
 ;
 ; (gtk_accel_path "<Actions>/MenuActionsCollection/ViewSlideshow" "F5")
 ; (gtk_accel_path "<Actions>/MenuActionsImage/Delete" "Delete")
-; (gtk_accel_path "<Actions>/MenuActionsCollection/GoLast" "<Alt>End")
+(gtk_accel_path "<Actions>/MenuActionsCollection/GoLast" "<Shift>k")
 ; (gtk_accel_path "<Actions>/MenuActionsImage/ViewResizeWindow" "")
 ; (gtk_accel_path "<Actions>/MenuActionsWindow/View" "")
-; (gtk_accel_path "<Actions>/MenuActionsCollection/GoFirst" "<Alt>Home")
+(gtk_accel_path "<Actions>/MenuActionsCollection/GoFirst" "<Shift>j")
 ; (gtk_accel_path "<Actions>/MenuActionsImage/ViewZoomFit" "")
 ; (gtk_accel_path "<Actions>/MenuActionsStaticImage/ImageRotateCCW" "<Primary><Shift>r")
 ; (gtk_accel_path "<Actions>/MenuActionsImage/ViewFullscreen" "F11")

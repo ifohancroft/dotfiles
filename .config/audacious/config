@@ -4,7 +4,7 @@ cover_name_exclude=
 enable_replay_gain=FALSE
 
 [audgui]
-filesel_path=/home/ifohancroft/Music
+filesel_path=/home/ifohancroft/Music/Other
 
 [skins]
 equalizer_visible=TRUE

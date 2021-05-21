@@ -20,7 +20,7 @@ export HISTFILESIZE=10000
 export TASKDATA="$XDG_DATA_HOME"/task
 export TASKRC="$XDG_CONFIG_HOME"/task/taskrc
 export VIT_DIR="$XDG_CONFIG_HOME"/vit
-export WEECHAT_HOME="$XDG_CONFIG_HOME"/weechat
+#export WEECHAT_HOME="$XDG_CONFIG_HOME"/weechat
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 eval $(dircolors "$XDG_CONFIG_HOME"/dircolors)
