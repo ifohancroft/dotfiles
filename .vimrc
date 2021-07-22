@@ -20,5 +20,5 @@ set title
 " let &iconstring = "gvim"
 " set icon
 
-#filetype plugin indent off
+"filetype plugin indent off
 
