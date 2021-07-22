@@ -20,9 +20,5 @@ set title
 " let &iconstring = "gvim"
 " set icon
 
-" Gamer Fix
-nnoremap G gg
-nnoremap gg G
-
-filetype plugin indent off
+#filetype plugin indent off
 
