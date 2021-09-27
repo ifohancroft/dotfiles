@@ -4,7 +4,7 @@ cover_name_exclude=
 enable_replay_gain=FALSE
 
 [audgui]
-filesel_path=/home/ifohancroft/Music/Other
+filesel_path=/home/ifohancroft/Music
 
 [skins]
 equalizer_visible=TRUE
@@ -12,14 +12,18 @@ equalizer_x=3565
 equalizer_y=143
 player_x=3565
 player_y=27
+playlist_height=290
 playlist_visible=TRUE
 playlist_x=3565
 playlist_y=259
 skin=/usr/share/audacious/Skins/Refugee
 
 [skins-layout]
+albumart-qt=3269,98,288,192
+eq_presets=3550,27,288,192
 playlist-manager-qt=3550,27,288,192
 search-tool-qt=2731,415,288,192
+song-info-qt=3231,440,467,322
 
 [song_change]
 cmd_line=echo "%a - %T " > /home/ifohancroft/Projects/ifohancroft/Twitch/currentsong.txt

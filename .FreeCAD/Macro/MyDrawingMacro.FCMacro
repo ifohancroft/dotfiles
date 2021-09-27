@@ -1,0 +1,42 @@
+import FreeCAD
+import FreeCADGui
+import Sketcher
+import PySide2
+
+from PySide2 import QtGui, QtWidgets
+from PySide2.QtWidgets import QApplication
+from PySide2.QtGui import QPixmap, QCursor
+
+class SwitchCutout:
+    def __init__(self):
+        self.changeCursor()
+        self.attachViewObserver()
+    def attachViewObserver(self):
+        if Gui.activeView() and repr(Gui.activeView()) == "View3DInventor":
+            self.view = Gui.activeView()
+            self.view_callback = self.view.addEventCallback("SoMouseButtonEvent", self.viewObserver)
+        else:
+            FreeCAD.Console.PrintMessage("ViewObserver cannot be set, no active 3D view\n")
+    def detachViewObserver(self):
+        self.view.removeEventCallback("SoMouseButtonEvent", self.view_callback)
+        self.resetCursor()
+    def viewObserver(self, info):
+        if info["State"] == "DOWN":
+            if info["Button"] == "BUTTON1":
+                self.origin_x = self.view.getPoint(info["Position"])[0]
+                self.origin_y = self.view.getPoint(info["Position"])[1]
+                self.draw()
+            elif info["Button"] == "BUTTON2":
+                self.detachViewObserver()
+    def changeCursor(self):
+        cursorImage = FreeCAD.getUserAppDataDir() + "Macro/Icons/Sketcher_Pointer_Create_Switch.svg"
+        pixmap = QPixmap(cursorImage)
+        cursor = QCursor(pixmap)
+        QApplication.setOverrideCursor(cursor)
+    def resetCursor(self):
+        QApplication.restoreOverrideCursor()
+    def draw(self):
+        # Just a placeholder for now. I will add the drawing part later.
+        FreeCAD.Console.PrintMessage("You clicked: " + str(self.origin_x) + "," + str(self.origin_y) + "\n")
+
+SwitchCutout()

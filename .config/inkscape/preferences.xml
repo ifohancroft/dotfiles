@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <inkscape
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   version="1"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   version="1">
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
   <group
      id="window">
     <group
@@ -104,12 +104,15 @@
      id="template">
     <sodipodi:namedview
        id="base"
-       pagecolor="#ffffff"
-       bordercolor="#666666"
+       pagecolor="#505050"
+       pageopacity="0.0"
+       pagecheckerboard="0"
+       bordercolor="#eeeeee"
        borderopacity="1.0"
        objecttolerance="10.0"
        gridtolerance="10.0"
        guidetolerance="10.0"
+       pageshadow="2"
        inkscape:pageopacity="0.0"
        inkscape:pageshadow="2"
        inkscape:window-width="640"
@@ -128,8 +131,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="3345.63"
-         height="3555.74" />
+         width="34"
+         height="345" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -165,8 +168,8 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="35.4362"
-         ry="35.4362" />
+         rx="27.8139"
+         ry="27.8139" />
       <eventcontext
          id="star"
          magnitude="5"
@@ -176,8 +179,7 @@
          id="spiral"
          style="fill:none;stroke:black"
          expansion="1"
-         usecurrent="0"
-         revolution="3" />
+         usecurrent="0" />
     </group>
     <group
        id="freehand"
@@ -202,7 +204,7 @@
        style="fill:black;fill-opacity:1;fill-rule:nonzero;stroke:none;"
        mass="2"
        angle="30"
-       width="15"
+       width="15.118"
        thinning="10"
        flatness="90"
        cap_rounding="0.0"
@@ -210,7 +212,9 @@
        tracebackground="0"
        usepressure="1"
        usetilt="0"
-       keep_selected="1">
+       keep_selected="1"
+       abs_width="1"
+       unit="mm">
       <group
          id="preset">
         <group
@@ -315,18 +319,17 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
        usecurrent="0"
        gradientdrag="1"
-       font_sample="AaBbCcIiPpQq12369$\342\202\254\302\242?.;/()"
+       font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
        use_svg2="1"
-       style="line-height:1.25;font-family:'Overpass Nerd Font';font-size:40px;-inkscape-font-specification:'Overpass Nerd Font';"
-       selcue="1"
-       align_mode="1" />
+       style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;"
+       selcue="1" />
     <eventcontext
        id="nodes"
        selcue="1"
@@ -342,8 +345,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="152.512"
-       y="48.7502"
+       x="204.489"
+       y="777.466"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -404,11 +407,18 @@
        usecurrent="1" />
     <group
        id="measure"
-       measure-start="27.9981,-82.859"
-       measure-end="135.998,-82.859"
-       fontsize="10"
-       unit="mm"
-       precision="5" />
+       measure-start="57.071,718.849"
+       measure-end="20.2093,718.849"
+       fontsize="10">
+      <group
+         id="measure-start"
+         x="93.0725"
+         y="5.55739" />
+      <group
+         id="measure-end"
+         x="93.0725"
+         y="2.77556e-17" />
+    </group>
   </group>
   <group
      id="palette">
@@ -547,60 +557,35 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="0"
+       page="2"
        x="0"
        y="0"
        w="378"
-       h="492"
+       h="490"
        visible="0"
        state="2"
-       placement="5" />
+       placement="2" />
     <group
-       id="filtereffects"
-       x="619"
-       y="511"
-       w="376"
-       h="258"
-       visible="0"
-       state="1"
-       placement="1" />
+       id="filtereffects" />
     <group
-       id="textandfont"
-       x="0"
-       y="0"
-       w="475"
-       h="280"
-       visible="0"
-       state="2"
-       placement="5" />
+       id="textandfont" />
     <group
        id="transformation"
        applyseparately="1"
        rotateCounterClockwise="1"
        x="0"
        y="0"
-       w="369"
-       h="367"
+       w="534"
+       h="207"
        visible="0"
        state="2"
        placement="5" />
     <group
-       id="align"
-       x="0"
-       y="0"
-       w="365"
-       h="417" />
+       id="align" />
     <group
        id="xml"
-       x="0"
-       y="56"
-       w="1918"
-       h="1024"
-       visible="0"
-       state="1"
-       placement="1"
-       panedpos="683"
-       attrtoggler="1" />
+       h="500"
+       w="300" />
     <group
        id="find" />
     <group
@@ -611,58 +596,44 @@
     <group
        id="documentoptions"
        state="1"
-       x="487"
-       y="238"
-       w="675"
-       h="811"
+       x="463"
+       y="239"
+       w="671"
+       h="795"
        visible="0"
        placement="1" />
     <group
        id="preferences"
        state="1"
        page="0"
-       x="492"
-       y="149"
-       w="936"
-       h="839"
+       x="464"
+       y="83"
+       w="992"
+       h="940"
        visible="0"
        placement="1" />
     <group
        id="gradienteditor" />
     <group
-       id="object"
-       x="0"
-       y="0"
-       w="293"
-       h="330"
-       visible="0"
-       state="2"
-       placement="5" />
+       id="object" />
     <group
        id="export"
        default=""
        append_extension="1"
-       path=""
-       x="0"
-       y="0"
-       w="382"
-       h="479"
-       visible="0"
-       state="2"
-       placement="5">
+       path="">
       <group
          id="exportarea"
-         value="drawing" />
+         value="page" />
       <group
          id="defaultxdpi"
          value="300" />
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.pdf.cairorenderer"
+       default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/PiCase40-GPIO-PCB"
+       path="/home/ifohancroft/Projects/Hacking/Mice/Razer Viper Ultimate/Housing/Rubber Sidegrips/Scans/Second Scan"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -673,11 +644,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/ifohancroft/Desktop/" />
+       path="/home/ifohancroft/Projects/Hacking/Mice/Razer Viper Ultimate/Housing/Rubber Sidegrips/Scans/Second Scan/" />
     <group
        id="import"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/SmallRig Swivel and Tilt Monitor Mount with a Monitor Clamp/Reference/"
+       path="/home/ifohancroft/Projects/Hacking/Mice/Razer Viper Ultimate/Housing/Rubber Sidegrips/Scans/Second Scan/"
        ask="1"
        ask_svg="1"
        link="embed"
@@ -688,17 +659,7 @@
        id="debug"
        redirect="0" />
     <group
-       id="clonetiler"
-       imax="1"
-       keepbbox="0"
-       jmax="10"
-       x="0"
-       y="0"
-       w="591"
-       h="529"
-       visible="0"
-       state="2"
-       placement="5" />
+       id="clonetiler" />
     <group
        id="gridtiler" />
     <group
@@ -719,20 +680,18 @@
     <group
        id="layers"
        maxDepth="20"
+       w="241"
+       h="520"
        x="0"
        y="0"
-       w="246"
-       h="244"
        visible="1"
        state="2"
-       placement="5" />
-    <group
-       id="extensioneditor" />
+       placement="2" />
     <group
        id="trace"
        state="1"
-       x="2605"
-       y="326"
+       x="685"
+       y="339"
        w="549"
        h="428"
        visible="0"
@@ -747,11 +706,13 @@
        id="undo-history"
        x="0"
        y="0"
-       w="246"
+       w="241"
        h="244"
        visible="1"
        state="2"
-       placement="5" />
+       placement="1" />
+    <group
+       id="extensioneditor" />
   </group>
   <group
      id="printing">
@@ -763,8 +724,6 @@
   </group>
   <group
      id="options"
-     dpifixbackup="1"
-     dpiupdatemethod="0"
      onimport="0">
     <group
        id="renderingcache"
@@ -798,7 +757,7 @@
        value="36" />
     <group
        id="cursortolerance"
-       value="8" />
+       value="8.0" />
     <group
        id="dragtolerance"
        value="4.0" />
@@ -849,9 +808,6 @@
        id="spacebarpans"
        value="1" />
     <group
-       id="wheelzooms"
-       value="1" />
-    <group
        id="transientpolicy"
        value="1" />
     <group
@@ -859,7 +815,7 @@
        value="0.4" />
     <group
        id="snapdelay"
-       value="150" />
+       value="0" />
     <group
        id="snapweight"
        value="0.5" />
@@ -898,6 +854,9 @@
     <group
        id="dialogsskiptaskbar"
        value="1" />
+    <group
+       id="defaultwindowsize"
+       value="2" />
     <group
        id="arenatilescachesize"
        value="8192" />
@@ -938,6 +897,9 @@
     <group
        id="compassangledisplay"
        value="0" />
+    <group
+       id="middlemousezoom"
+       value="1" />
     <group
        id="maskobject"
        topmost="1"
@@ -1030,33 +992,43 @@
        partialdynamic="0"
        dynamicnotdone="1" />
     <group
+       id="boot"
+       canvas="dark"
+       theme="compacted"
+       enabled="0">
+      <group
+         id="shown"
+         ver1.1="1" />
+    </group>
+    <group
        id="rendering" />
     <group
-       id="font"
-       unitType="1" />
+       id="commandpalette">
+      <group
+         id="showfullactionname"
+         value="1" />
+    </group>
     <group
-       id="middlemousezoom"
+       id="wheelzooms"
        value="1" />
+    <group
+       id="font"
+       unitType="2" />
   </group>
   <group
      id="extensions"
-     org.inkscape.webdesign.interactive_mockup.when="onclick"
-     org.inkscape.webdesign.interactive_mockup.__live_effect__="0"
-     org.inkscape.webdesign.interactive_mockup.tab="Options"
-     org.inkscape.input.dxf_input.encoding="latin_1"
-     org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5"
-     org.inkscape.output.pdf.cairorenderer.resolution="300" />
+     org.inkscape.input.svg.scale="auto" />
   <group
      id="desktop"
-     style="fill:#000080;-inkscape-font-specification:'Overpass Nerd Font Italic';font-family:'Overpass Nerd Font';font-size:12px;text-anchor:middle;text-align:center;font-style:italic;stroke-linecap:square;stroke-width:19.2">
+     style="fill:#ff0000;font-size:96px;stroke:#ff0000;stroke-width:5;stroke-linejoin:round;stroke-linecap:round">
     <group
        width="1918"
-       height="1024"
+       height="1025"
        x="0"
        y="27"
+       maximized="1"
        fullscreen="0"
-       id="geometry"
-       maximized="1" />
+       id="geometry" />
     <group
        id="XYfront" />
     <group
@@ -1080,7 +1052,7 @@
     <group
        id="tools"
        icononly="1"
-       small="1" />
+       small="0" />
   </group>
   <group
      id="iconpreview"
@@ -1155,22 +1127,19 @@
      language="" />
   <group
      id="theme"
-     defaultTheme="BlueMenta"
+     defaultPreferDarkTheme="0"
+     defaultGtkTheme="BlueMenta"
      defaultIconTheme="mate"
-     gtkTheme="Adwaita"
-     iconTheme="hicolor"
+     symbolicIcons="0"
+     preferDarkTheme="1"
+     darkTheme="1"
      menuIcons_canvas="0"
      menuIcons_layers="0"
      menuIcons_objects="0"
-     symbolicIcons="0"
-     menuIcons="0"
-     preferDarkTheme="0"
-     darkTheme="0">
-    <group
-       id="Papirus-Dark-Maia"
-       symbolicBaseColor="842150655"
-       symbolicSuccessColor="882433023"
-       symbolicWarningColor="4067964415"
-       symbolicErrorColor="4232132863" />
-  </group>
+     gtkTheme="Minwaita-Inkscape"
+     iconTheme="hicolor"
+     defaultTheme="BlueMenta" />
+  <group
+     id="live_effects"
+     flattening="0" />
 </inkscape>

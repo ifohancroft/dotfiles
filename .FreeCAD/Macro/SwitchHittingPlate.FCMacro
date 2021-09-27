@@ -1,0 +1,203 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/ifohancroft/.FreeCAD/Macro/SwitchHittingPlate.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Sketcher
+
+# Geometry
+(g0, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10, g11, g12, g13, g14, g15, g16, g17, g18, g19, g20, g21, g22, g23, g24, g25, g26, g27, g28, g29, g30, g31, g32, g33, g34, g35) = ActiveSketch.addGeometry([
+
+    # Top Middle
+    Part.LineSegment(App.Vector(-1, 7.8, 0), App.Vector(1, 7.8, 0)),
+    Part.LineSegment(App.Vector(1, 7.8, 0), App.Vector(1, 7, 0)),
+    Part.LineSegment(App.Vector(1, 7, 0), App.Vector(-1, 7, 0)),
+    Part.LineSegment(App.Vector(-1, 7, 0), App.Vector(-1, 7.8, 0)),
+
+    # Top Right
+    Part.LineSegment(App.Vector(2.7, 7.8, 0), App.Vector(7, 7.8, 0)),
+    Part.ArcOfCircle(Part.Circle(App.Vector(7, 7, 0), App.Vector(0, 0, 1), 0.8), 0, 1.570796),
+    Part.LineSegment(App.Vector(7.8, 7, 0), App.Vector(7.8, 5.8, 0)),
+    Part.LineSegment(App.Vector(7.8, 5.8, 0), App.Vector(7, 5.8, 0)),
+    Part.LineSegment(App.Vector(7, 5.8, 0), App.Vector(7, 7, 0)),
+    Part.LineSegment(App.Vector(7, 7, 0), App.Vector(2.7, 7, 0)),
+    Part.LineSegment(App.Vector(2.7, 7, 0), App.Vector(2.7, 7.8, 0)),
+
+    # Bottom Right
+    Part.LineSegment(App.Vector(2.7, -7, 0), App.Vector(7, -7, 0)),
+    Part.LineSegment(App.Vector(7, -7, 0), App.Vector(7, -5.8, 0)),
+    Part.LineSegment(App.Vector(7, -5.8, 0), App.Vector(7.8, -5.8, 0)),
+    Part.LineSegment(App.Vector(7.8, -5.8, 0), App.Vector(7.8, -7, 0)),
+    Part.ArcOfCircle(Part.Circle(App.Vector(7, -7, 0), App.Vector(0, 0, 1), 0.8), -1.570796, 0),
+    Part.LineSegment(App.Vector(7, -7.8, 0), App.Vector(2.7, -7.8, 0)),
+    Part.LineSegment(App.Vector(2.7, -7.8, 0), App.Vector(2.7, -7, 0)),
+
+    # Bottom Middle
+    Part.LineSegment(App.Vector(-1, -7, 0), App.Vector(1, -7, 0)),
+    Part.LineSegment(App.Vector(1, -7, 0), App.Vector(1, -7.8, 0)),
+    Part.LineSegment(App.Vector(1, -7.8, 0), App.Vector(-1, -7.8, 0)),
+    Part.LineSegment(App.Vector(-1, -7.8, 0), App.Vector(-1, -7, 0)),
+
+    # Bottom Left
+    Part.LineSegment(App.Vector(-7, -7, 0), App.Vector(-2.7, -7, 0)),
+    Part.LineSegment(App.Vector(-2.7, -7, 0), App.Vector(-2.7, -7.8, 0)),
+    Part.LineSegment(App.Vector(-2.7, -7.8, 0), App.Vector(-7, -7.8, 0)),
+    Part.ArcOfCircle(Part.Circle(App.Vector(-7, -7, 0), App.Vector(0, 0, 1), 0.8), -3.141593, -1.570796),
+    Part.LineSegment(App.Vector(-7.8, -7, 0), App.Vector(-7.8, -5.8, 0)),
+    Part.LineSegment(App.Vector(-7.8, -5.8, 0), App.Vector(-7, -5.8, 0)),
+    Part.LineSegment(App.Vector(-7, -5.8, 0), App.Vector(-7, -7, 0)),
+
+    # Top Left
+    Part.LineSegment(App.Vector(-7, 7.8, 0), App.Vector(-2.7, 7.8, 0)),
+    Part.LineSegment(App.Vector(-2.7, 7.8, 0), App.Vector(-2.7, 7, 0)),
+    Part.LineSegment(App.Vector(-2.7, 7, 0), App.Vector(-7, 7, 0)),
+    Part.LineSegment(App.Vector(-7, 7, 0), App.Vector(-7, 5.8, 0)),
+    Part.LineSegment(App.Vector(-7, 5.8, 0), App.Vector(-7.8, 5.8, 0)),
+    Part.LineSegment(App.Vector(-7.8, 5.8, 0), App.Vector(-7.8, 7, 0)),
+    Part.ArcOfCircle(Part.Circle(App.Vector(-7, 7, 0), App.Vector(0, 0, 1), 0.8), 1.570796, 3.141593)
+
+], False)
+
+# Construction Geometry
+(cg0, cg1, cg2, cg3, cg4, cg5) = ActiveSketch.addGeometry([
+
+    # Outer Square
+    Part.LineSegment(App.Vector(-7.8, 7.8, 0), App.Vector(7.8, 7.8, 0)),
+    Part.LineSegment(App.Vector(7.8, 7.8, 0), App.Vector(7.8, -7.8, 0)),
+    Part.LineSegment(App.Vector(7.8, -7.8, 0), App.Vector(-7.8, -7.8, 0)),
+    Part.LineSegment(App.Vector(-7.8, -7.8, 0), App.Vector(-7.8, 7.8, 0)),
+
+    # Center Line
+    Part.LineSegment(App.Vector(0, 7, 0), App.Vector(0, -7, 0)),
+
+    # Center Dot
+    Part.Point(App.Vector(0, 0, 0))
+
+], True)
+
+# Constraints
+ActiveSketch.addConstraint([
+
+    # Top Middle
+    Sketcher.Constraint('Vertical', g1),
+    Sketcher.Constraint('Horizontal', g2),
+    Sketcher.Constraint('Vertical', g3),
+    Sketcher.Constraint('Tangent', g0, cg0),
+    Sketcher.Constraint('Coincident', g0, 2, g1, 1),
+    Sketcher.Constraint('Coincident', g1, 2, g2, 1),
+    Sketcher.Constraint('Coincident', g2, 2, g3, 1),
+    Sketcher.Constraint('Coincident', g3, 2, g0, 1),
+    Sketcher.Constraint('Distance', g0, 2),
+
+    # Top Right
+    Sketcher.Constraint('Horizontal', g7),
+    Sketcher.Constraint('Vertical', g8),
+    Sketcher.Constraint('Horizontal', g9),
+    Sketcher.Constraint('Vertical', g10),
+    Sketcher.Constraint('Tangent', g4, cg0),
+    Sketcher.Constraint('Tangent', g4, 2, g5, 2),
+    Sketcher.Constraint('Tangent', g5, 1, g6, 1),
+    Sketcher.Constraint('Tangent', g6, cg1),
+    Sketcher.Constraint('Coincident', g6, 2, g7, 1),
+    Sketcher.Constraint('Coincident', g7, 2, g8, 1),
+    Sketcher.Constraint('Coincident', g8, 2, g5, 3),
+    Sketcher.Constraint('Coincident', g5, 3, g9, 1),
+    Sketcher.Constraint('Coincident', g9, 2, g10, 1),
+    Sketcher.Constraint('Coincident', g10, 2, g4, 1),
+    Sketcher.Constraint('Distance', g4, 4.3),
+    Sketcher.Constraint('Diameter', g5, 1.6),
+    Sketcher.Constraint('Distance', g6, 1.2),
+    Sketcher.Constraint('Equal', g7, g1),
+
+    # Bottom Right
+    Sketcher.Constraint('Horizontal', g11),
+    Sketcher.Constraint('Vertical', g12),
+    Sketcher.Constraint('Horizontal', g13),
+    Sketcher.Constraint('Vertical', g17),
+    Sketcher.Constraint('Coincident', g11, 2, g15, 3),
+    Sketcher.Constraint('Coincident', g15, 3, g12, 1),
+    Sketcher.Constraint('Coincident', g12, 2, g13, 1),
+    Sketcher.Constraint('Coincident', g13, 2, g14, 1),
+    Sketcher.Constraint('Tangent', g14, cg1),
+    Sketcher.Constraint('Tangent', g14, 2, g15, 2),
+    Sketcher.Constraint('Tangent', g15, 1, g16, 1),
+    Sketcher.Constraint('Tangent', g16, cg2),
+    Sketcher.Constraint('Coincident', g16, 2, g17, 1),
+    Sketcher.Constraint('Coincident', g17, 2, g11, 1),    
+    Sketcher.Constraint('Equal', g13, g1),
+    Sketcher.Constraint('Equal', g14, g6),
+    Sketcher.Constraint('Equal', g16, g4),
+
+    # Bottom Middle
+    Sketcher.Constraint('Horizontal', g18),
+    Sketcher.Constraint('Vertical', g19),
+    Sketcher.Constraint('Vertical', g21),
+    Sketcher.Constraint('Coincident', g18, 2, g19, 1),
+    Sketcher.Constraint('Coincident', g19, 2, g20, 1),
+    Sketcher.Constraint('Tangent', g20, cg2),
+    Sketcher.Constraint('Coincident', g20, 2, g21, 1),
+    Sketcher.Constraint('Coincident', g21, 2, g18, 1),
+    Sketcher.Constraint('Equal', g19, g1),
+    Sketcher.Constraint('Equal', g20, g0),
+
+    # Bottom Left
+    Sketcher.Constraint('Horizontal', g22),
+    Sketcher.Constraint('Vertical', g23),
+    Sketcher.Constraint('Horizontal', g27),
+    Sketcher.Constraint('Vertical', g28),
+    Sketcher.Constraint('Coincident', g22, 2, g23, 1),
+    Sketcher.Constraint('Coincident', g23, 2, g24, 1),
+    Sketcher.Constraint('Tangent', g24, cg2),
+    Sketcher.Constraint('Tangent', g24, 2, g25, 2),
+    Sketcher.Constraint('Tangent', g25, 1, g26, 1),
+    Sketcher.Constraint('Tangent', g26, cg3),
+    Sketcher.Constraint('Coincident', g26, 2, g27, 1),
+    Sketcher.Constraint('Coincident', g27, 2, g28, 1),
+    Sketcher.Constraint('Coincident', g28, 2, g25, 3),
+    Sketcher.Constraint('Coincident', g25, 3, g22, 1),
+    Sketcher.Constraint('Equal', g24, g4),
+    Sketcher.Constraint('Equal', g26, g6),
+    Sketcher.Constraint('Equal', g27, g1),
+
+    # Top Left
+    Sketcher.Constraint('Vertical', g30),
+    Sketcher.Constraint('Horizontal', g31),
+    Sketcher.Constraint('Vertical', g32),
+    Sketcher.Constraint('Horizontal', g33),
+    Sketcher.Constraint('Tangent', g29, cg0),
+    Sketcher.Constraint('Coincident', g29, 2, g30, 1),
+    Sketcher.Constraint('Coincident', g30, 2, g31, 1),
+    Sketcher.Constraint('Coincident', g31, 2, g35, 3),
+    Sketcher.Constraint('Coincident', g35, 3, g32, 1),
+    Sketcher.Constraint('Coincident', g32, 2, g33, 1),
+    Sketcher.Constraint('Coincident', g33, 2, g34, 1),
+    Sketcher.Constraint('Tangent', g34, cg3),
+    Sketcher.Constraint('Tangent', g34, 2, g35, 2),
+    Sketcher.Constraint('Tangent', g35, 1, g29, 1),
+    Sketcher.Constraint('Equal', g29, g4),
+    Sketcher.Constraint('Equal', g33, g1),
+    Sketcher.Constraint('Equal', g34, g6),
+
+    # Outer Square
+    Sketcher.Constraint('Horizontal', cg0),
+    Sketcher.Constraint('Vertical', cg1),
+    Sketcher.Constraint('Horizontal', cg2),
+    Sketcher.Constraint('Vertical', cg3),
+    Sketcher.Constraint('Coincident', cg0, 2, cg1, 1),
+    Sketcher.Constraint('Coincident', cg1, 2, cg2, 1),
+    Sketcher.Constraint('Coincident', cg2, 2, cg3, 1),
+    Sketcher.Constraint('Coincident', cg3, 2, cg0, 1),
+    Sketcher.Constraint('Distance', cg3, 15.6),
+    Sketcher.Constraint('Equal', cg3, cg0),
+
+    # Center Line
+    Sketcher.Constraint('Vertical', cg4),
+    Sketcher.Constraint('Symmetric', g2, 1, g2, 2, cg4, 1),
+    Sketcher.Constraint('Symmetric', g18, 1, g18, 2, cg4, 2),
+
+    # Center Dot
+    Sketcher.Constraint('Symmetric', g5, 3, g25, 3, cg5, 1),
+    Sketcher.Constraint('PointOnObject', cg5, 1, cg4)
+
+])
+
+# Macro End: /home/ifohancroft/.FreeCAD/Macro/SwitchHittingPlate.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

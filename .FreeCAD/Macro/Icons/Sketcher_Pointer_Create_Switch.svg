@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   height="64"
+   width="64"
+   id="svg12"
+   sodipodi:docname="Sketcher_Pointer_Create_Switch.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-center="true"
+     inkscape:snap-text-baseline="true"
+     inkscape:snap-page="true"
+     inkscape:zoom="4"
+     inkscape:cx="34.75"
+     inkscape:cy="39.625"
+     inkscape:window-width="1920"
+     inkscape:window-height="1026"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12">
+    <sodipodi:guide
+       position="59,33"
+       orientation="1,0"
+       id="guide181" />
+    <sodipodi:guide
+       position="64,32"
+       orientation="1,0"
+       id="guide183" />
+    <sodipodi:guide
+       position="45.177383,38.177383"
+       orientation="0,-1"
+       id="guide190" />
+  </sodipodi:namedview>
+  <g
+     id="g188"
+     transform="translate(12.822617)">
+    <rect
+       x="19.822617"
+       y="31.822617"
+       width="25.354765"
+       height="25.354765"
+       id="rect2"
+       style="fill:none;stroke:#cc0000;stroke-width:1.64523" />
+    <circle
+       cx="19.822617"
+       cy="57.177383"
+       r="5"
+       id="circle4"
+       style="fill:none;stroke:#cc0000;stroke-width:2" />
+    <circle
+       cx="45.177383"
+       cy="31.822617"
+       r="5"
+       id="circle6"
+       style="fill:none;stroke:#cc0000;stroke-width:2" />
+  </g>
+  <g
+     id="crosshair"
+     style="stroke:#ffffff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;">
+    <path
+       d="m16,3v9m0,8v9m-13-13h9m8,0h9"
+       id="path9" />
+  </g>
+</svg>

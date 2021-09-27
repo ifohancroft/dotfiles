@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/ifohancroft/.FreeCAD/Macro/Switch-Floating.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Sketcher
+
+# Geometry
+(g0, g1, g2, g3) = ActiveSketch.addGeometry([
+
+    Part.LineSegment(App.Vector(-7, 7, 0),App.Vector(7, 7, 0)),
+    Part.LineSegment(App.Vector(7, 7, 0),App.Vector(7, -7, 0)),
+    Part.LineSegment(App.Vector(7, -7, 0),App.Vector(-7, -7, 0)),
+    Part.LineSegment(App.Vector(-7, -7, 0),App.Vector(-7, 7, 0))
+
+], False)
+
+# Constraints
+ActiveSketch.addConstraint([
+
+    Sketcher.Constraint('Perpendicular', g0, g1),
+    Sketcher.Constraint('Parallel', g1, g3),
+    Sketcher.Constraint('Parallel', g2, g0),
+    Sketcher.Constraint('Coincident',g0,2,g1,1),
+    Sketcher.Constraint('Coincident',g1,2,g2,1),
+    Sketcher.Constraint('Coincident',g2,2,g3,1),
+    Sketcher.Constraint('Coincident',g3,2,g0,1),
+    Sketcher.Constraint('Distance',g0,14),
+    Sketcher.Constraint('Equal',g1,g0)
+
+])
+
+
+# Macro End: /home/ifohancroft/.FreeCAD/Macro/Switch-Floating.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

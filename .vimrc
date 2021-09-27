@@ -13,6 +13,8 @@ syntax on
 " Theme
 set t_Co=256
 colorscheme nighted
+" Transparent background
+hi Normal guibg=NONE ctermbg=NONE
 
 " Misc
 let &titlestring = "Vim " . expand("%:t") . " @ " . hostname()
