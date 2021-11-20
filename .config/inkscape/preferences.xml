@@ -557,7 +557,7 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="2"
+       page="1"
        x="0"
        y="0"
        w="378"
@@ -633,7 +633,7 @@
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Hacking/Mice/Razer Viper Ultimate/Housing/Rubber Sidegrips/Scans/Second Scan"
+       path="/home/ifohancroft/Projects/Keyboards/Hardware/ErgoThis"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -1020,7 +1020,7 @@
      org.inkscape.input.svg.scale="auto" />
   <group
      id="desktop"
-     style="fill:#ff0000;font-size:96px;stroke:#ff0000;stroke-width:5;stroke-linejoin:round;stroke-linecap:round">
+     style="fill:#000000;font-size:96px;stroke-width:5;stroke-linejoin:round;stroke-linecap:round">
     <group
        width="1918"
        height="1025"

@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/ifohancroft/.FreeCAD/Macro/Cherry-5Pin-SF-HW-PCBCutout.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Sketcher
+
+# Geometry
+(middleFixingPin, leftElectricPin, rightElectricPin, leftFixingPin, rightFixingPin) = ActiveSketch.addGeometry([
+
+    # Middle Fixing Pin
+    Part.Circle(App.Vector(0, 0, 0),App.Vector(0, 0, 1), 2),
+
+    # Left Electric Pin
+    Part.Circle(App.Vector(-3.81, 2.54, 0),App.Vector(0, 0, 1), 1.5),
+
+    # Right Electric Pin
+    Part.Circle(App.Vector(2.54, 5.08, 0),App.Vector(0, 0, 1), 1.5),
+
+    # Left Fixing Pin
+    Part.Circle(App.Vector(-5.08, 0, 0),App.Vector(0, 0, 1), 0.85),
+
+    # Right Fixing Pin
+    Part.Circle(App.Vector(5.08, 0, 0),App.Vector(0, 0, 1), 0.85)
+
+], False)
+
+# Construction Geometry
+(electricPinsDistanceLine, rightElectricPinDistanceLine, leftElectricPinDistanceLine, fixingPinsDistanceLine) = ActiveSketch.addGeometry([
+
+    # Electric Pins Distance Line
+    Part.LineSegment(App.Vector(0, 0, 0), App.Vector(0, 5.08, 0)),
+
+    # Right Electric Pin Distance Line
+    Part.LineSegment(App.Vector(0, 5.08, 0), App.Vector(2.54, 5.08, 0)),
+
+    # Left Electric Pin Distance Line
+    Part.LineSegment(App.Vector(0, 2.54, 0), App.Vector(-3.81, 2.54, 0)),
+
+    # Fixing Pins Distance Line
+    Part.LineSegment(App.Vector(-5.08, 0, 0), App.Vector(5.08, 0, 0))
+
+    
+
+], True)
+
+# Constraints
+ActiveSketch.addConstraint([
+
+    Sketcher.Constraint('Coincident', middleFixingPin, 3, electricPinsDistanceLine, 1),
+
+    Sketcher.Constraint('Vertical', electricPinsDistanceLine),
+
+    Sketcher.Constraint('Coincident', electricPinsDistanceLine, 2, rightElectricPinDistanceLine, 1),
+
+    Sketcher.Constraint('Coincident', rightElectricPinDistanceLine, 2, rightElectricPin, 3),
+
+    Sketcher.Constraint('Horizontal', rightElectricPinDistanceLine),
+
+    Sketcher.Constraint('Symmetric', electricPinsDistanceLine, 1, electricPinsDistanceLine, 2, leftElectricPinDistanceLine, 1),
+
+    Sketcher.Constraint('Coincident', leftElectricPinDistanceLine, 2, leftElectricPin, 3),
+
+    Sketcher.Constraint('Horizontal', leftElectricPinDistanceLine),
+
+    Sketcher.Constraint('Coincident', leftFixingPin, 3, fixingPinsDistanceLine, 1),
+
+    Sketcher.Constraint('Coincident', fixingPinsDistanceLine, 2, rightFixingPin, 3),
+
+    Sketcher.Constraint('Horizontal', fixingPinsDistanceLine),
+
+    Sketcher.Constraint('Symmetric', fixingPinsDistanceLine, 1, fixingPinsDistanceLine, 2, middleFixingPin, 3),
+
+    Sketcher.Constraint('Equal', rightElectricPin, leftElectricPin),
+
+    Sketcher.Constraint('Equal', leftFixingPin, rightFixingPin),
+
+    Sketcher.Constraint('Diameter', middleFixingPin, 4),
+
+    Sketcher.Constraint('Diameter', rightElectricPin, 3),
+
+    Sketcher.Constraint('Diameter', leftFixingPin, 1.7),
+
+    Sketcher.Constraint('Distance', electricPinsDistanceLine, 5.08),
+
+    Sketcher.Constraint('Distance', rightElectricPinDistanceLine, 2.54),
+
+    Sketcher.Constraint('Distance', leftElectricPinDistanceLine, 3.81),
+
+    Sketcher.Constraint('Distance', fixingPinsDistanceLine, 10.16)
+
+])
+
+# Macro End: /home/ifohancroft/.FreeCAD/Macro/Cherry-5Pin-SF-HW-PCBCutout.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

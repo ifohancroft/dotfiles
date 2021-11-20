@@ -8,7 +8,7 @@ set expandtab
 syntax on
 
 " Visual cues
-" set number
+ set number
 
 " Theme
 set t_Co=256
