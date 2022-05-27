@@ -1,0 +1,113 @@
+# -*- coding: utf-8 -*-
+
+# Macro Begin: /home/ifohancroft/.FreeCAD/Macro/MX-5Pin-SouthFacing-HotSwap-PCBCutout.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++
+import FreeCAD
+import Sketcher
+
+# Geometry
+(leftFixingPin, centerPin, rightFixingPin, leftElectricPin, rightElectricPin) = ActiveSketch.addGeometry([
+
+    # Left Fixing Pin
+    Part.Circle(App.Vector(-5.08, 0, 0),App.Vector(0, 0, 1), 0.85),
+
+    # Center Pin
+    Part.Circle(App.Vector(0, 0, 0),App.Vector(0, 0, 1), 2),
+
+    # Right Fixing Pin
+    Part.Circle(App.Vector(5.08, 0, 0),App.Vector(0, 0, 1), 0.85),
+
+    # Left Electric Pin
+    Part.Circle(App.Vector(-3.81, 2.54, 0),App.Vector(0, 0, 1), 1.5),
+
+    # Right Electric Pin
+    Part.Circle(App.Vector(2.54, 5.08, 0),App.Vector(0, 0, 1), 1.5)
+
+], False)
+
+# Construction Geometry
+(leftPinsVerticalDistance, leftPinsHorizontalDistance, electricPinsVerticalDistance, electricPinsHorizontalDistance, rightPinsHorizontalDistance, rightPinsVerticalDistance) = ActiveSketch.addGeometry([
+
+    # Left Pins Vertical Distance
+    Part.LineSegment(App.Vector(-5.08, 0, 0), App.Vector(-5.08, 2.54, 0)),
+
+    # Left Pins Horizontal Distance
+    Part.LineSegment(App.Vector(-5.08, 2.54, 0), App.Vector(-3.81, 2.54, 0)),
+
+    # Electric Pins Vertical Distance
+    Part.LineSegment(App.Vector(-3.81, 2.54, 0), App.Vector(-3.81, 5.08, 0)),
+
+    # Electric Pins Horizontal Distance
+    Part.LineSegment(App.Vector(-3.81, 5.08, 0), App.Vector(2.54, 5.08, 0)),
+
+    # Right Pins Horizontal Distance
+    Part.LineSegment(App.Vector(2.54, 5.08, 0), App.Vector(5.08, 5.08, 0)),
+
+    # Right Pins Vertical Distance
+    Part.LineSegment(App.Vector(5.08, 5.08, 0), App.Vector(5.08, 0, 0))
+
+], True)
+
+# Constraints
+constraints = ActiveSketch.addConstraint([
+
+    Sketcher.Constraint('Coincident', leftFixingPin, 3, leftPinsVerticalDistance, 1),
+
+    Sketcher.Constraint('Vertical', leftPinsVerticalDistance),
+
+    Sketcher.Constraint('Coincident', leftPinsVerticalDistance, 2, leftPinsHorizontalDistance, 1),
+
+    Sketcher.Constraint('Horizontal', leftPinsHorizontalDistance),
+
+    Sketcher.Constraint('Coincident', leftPinsHorizontalDistance, 2, leftElectricPin, 3),
+
+    Sketcher.Constraint('Coincident', leftElectricPin, 3, electricPinsVerticalDistance, 1),
+
+    Sketcher.Constraint('Vertical', electricPinsVerticalDistance),
+
+    Sketcher.Constraint('Coincident', electricPinsVerticalDistance, 2, electricPinsHorizontalDistance, 1),
+
+    Sketcher.Constraint('Horizontal', electricPinsHorizontalDistance),
+
+    Sketcher.Constraint('Coincident', electricPinsHorizontalDistance, 2, rightElectricPin, 3),
+
+    Sketcher.Constraint('Coincident', rightElectricPin, 3, rightPinsHorizontalDistance, 1),
+
+    Sketcher.Constraint('Horizontal', rightPinsHorizontalDistance),
+
+    Sketcher.Constraint('Coincident', rightPinsHorizontalDistance, 2, rightPinsVerticalDistance, 1),
+
+    Sketcher.Constraint('Vertical', rightPinsVerticalDistance),
+
+    Sketcher.Constraint('Coincident', rightPinsVerticalDistance, 2, rightFixingPin, 3),
+
+    Sketcher.Constraint('Diameter', leftFixingPin, 1.7),
+
+    Sketcher.Constraint('Diameter', centerPin, 4),
+
+    Sketcher.Constraint('Diameter', leftElectricPin, 3),
+
+    Sketcher.Constraint('DistanceY', leftPinsVerticalDistance, 1, leftPinsVerticalDistance, 2, 2.54),
+
+    Sketcher.Constraint('DistanceX', leftPinsHorizontalDistance, 1, leftPinsHorizontalDistance, 2, 1.27),
+
+    Sketcher.Constraint('DistanceX', electricPinsHorizontalDistance, 1, electricPinsHorizontalDistance, 2, 6.35),
+
+    Sketcher.Constraint('DistanceY', rightPinsVerticalDistance, 2, rightPinsVerticalDistance, 1, 5.08),
+
+    Sketcher.Constraint('Equal', rightFixingPin, leftFixingPin),
+
+    Sketcher.Constraint('Equal', rightElectricPin, leftElectricPin),
+
+    Sketcher.Constraint('Equal', electricPinsVerticalDistance, leftPinsVerticalDistance),
+
+    Sketcher.Constraint('Equal', rightPinsHorizontalDistance, leftPinsVerticalDistance),
+
+    Sketcher.Constraint('Symmetric', leftFixingPin, 3, rightFixingPin, 3, centerPin, 3)
+
+])
+
+for index, constraint in enumerate(constraints):
+    if (index < 15) or (index > 21):
+        ActiveSketch.setVirtualSpace(constraint, True)
+
+# Macro End: /home/ifohancroft/.FreeCAD/Macro/MX-5Pin-SouthFacing-HotSwap-PCBCutout.FCMacro +++++++++++++++++++++++++++++++++++++++++++++++++

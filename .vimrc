@@ -1,3 +1,6 @@
+" Get the defaults that most users want.
+source $VIMRUNTIME/defaults.vim
+
 " Formatting
 set smartindent
 set autoindent
@@ -8,7 +11,7 @@ set expandtab
 syntax on
 
 " Visual cues
- set number
+set number
 
 " Theme
 set t_Co=256
@@ -23,4 +26,9 @@ set title
 " set icon
 
 "filetype plugin indent off
+
+" Key maps
+":nnoremap <Space><Space> :%s/\%.c/ /g<CR> " Insert space before cursor on all lines
+:nnoremap <expr> <Space> ':%s/\%.c/'.nr2char(getchar()).'/g<CR>' " Insert the next pressed character, before the cursor on all lines
+:nnoremap <BS><BS> :%s/\%.c.//g<CR> " Remove character under cursor on all lines
 

@@ -12,17 +12,19 @@ statusbar_visible=FALSE
 [skins]
 equalizer_visible=TRUE
 equalizer_x=3565
-equalizer_y=141
+equalizer_y=143
 player_x=3565
 player_y=27
 playlist_height=290
 playlist_visible=TRUE
-playlist_x=3565
-playlist_y=257
+playlist_x=3586
+playlist_y=259
 skin=/usr/share/audacious/Skins/Refugee
+vis_type=2
 
 [skins-layout]
 albumart-qt=3269,98,288,192
+blur_scope-qt=3550,27,288,192
 eq_presets=3550,27,288,192
 playlist-manager-qt=3550,27,288,192
 search-tool-qt=2731,415,288,192

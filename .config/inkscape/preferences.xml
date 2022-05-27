@@ -131,8 +131,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="34"
-         height="345" />
+         width="207.552"
+         height="191.186" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -168,11 +168,11 @@
          end="0"
          start="0"
          usecurrent="1"
-         rx="27.8139"
-         ry="27.8139" />
+         rx="15.3937"
+         ry="15.3937" />
       <eventcontext
          id="star"
-         magnitude="5"
+         magnitude="3"
          style="fill:yellow;"
          usecurrent="1" />
       <eventcontext
@@ -213,8 +213,8 @@
        usepressure="1"
        usetilt="0"
        keep_selected="1"
-       abs_width="1"
-       unit="mm">
+       abs_width="0"
+       unit="px">
       <group
          id="preset">
         <group
@@ -409,15 +409,17 @@
        id="measure"
        measure-start="57.071,718.849"
        measure-end="20.2093,718.849"
-       fontsize="10">
+       fontsize="10"
+       precision="5"
+       unit="mm">
       <group
          id="measure-start"
-         x="93.0725"
-         y="5.55739" />
+         x="0"
+         y="20.7874" />
       <group
          id="measure-end"
-         x="93.0725"
-         y="2.77556e-17" />
+         x="1.64315e-15"
+         y="47.622" />
     </group>
   </group>
   <group
@@ -605,7 +607,7 @@
     <group
        id="preferences"
        state="1"
-       page="0"
+       page="49"
        x="464"
        y="83"
        w="992"
@@ -626,14 +628,14 @@
          value="page" />
       <group
          id="defaultxdpi"
-         value="300" />
+         value="76.8" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Keyboards/Hardware/ErgoThis"
+       path="/home/ifohancroft/.local/share/icons/hicolor/scalable/apps"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -644,11 +646,11 @@
     <group
        id="open"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Hacking/Mice/Razer Viper Ultimate/Housing/Rubber Sidegrips/Scans/Second Scan/" />
+       path="/home/ifohancroft/Projects/Keyboards/Hardware/ErgoThis/" />
     <group
        id="import"
        enable_preview="1"
-       path="/home/ifohancroft/Projects/Hacking/Mice/Razer Viper Ultimate/Housing/Rubber Sidegrips/Scans/Second Scan/"
+       path="/home/ifohancroft/Documents/Assets/Xelu_Free_Controller&amp;Key_Prompts/Keyboard &amp; Mouse/Light/"
        ask="1"
        ask_svg="1"
        link="embed"
@@ -724,7 +726,9 @@
   </group>
   <group
      id="options"
-     onimport="0">
+     onimport="0"
+     dpifixbackup="1"
+     dpiupdatemethod="0">
     <group
        id="renderingcache"
        size="512" />
@@ -1020,10 +1024,10 @@
      org.inkscape.input.svg.scale="auto" />
   <group
      id="desktop"
-     style="fill:#000000;font-size:96px;stroke-width:5;stroke-linejoin:round;stroke-linecap:round">
+     style="fill:#e02727;font-size:96px;stroke-linejoin:round;stroke-linecap:round;stroke-width:1.0015748">
     <group
-       width="1918"
-       height="1025"
+       width="1034"
+       height="818"
        x="0"
        y="27"
        maximized="1"
@@ -1127,7 +1131,7 @@
      language="" />
   <group
      id="theme"
-     defaultPreferDarkTheme="0"
+     defaultPreferDarkTheme="1"
      defaultGtkTheme="BlueMenta"
      defaultIconTheme="mate"
      symbolicIcons="0"
@@ -1136,9 +1140,16 @@
      menuIcons_canvas="0"
      menuIcons_layers="0"
      menuIcons_objects="0"
+     defaultTheme="BlueMenta"
      gtkTheme="Minwaita-Inkscape"
-     iconTheme="hicolor"
-     defaultTheme="BlueMenta" />
+     iconTheme="hicolor">
+    <group
+       id="hicolor"
+       symbolicBaseColor="4008635647"
+       symbolicSuccessColor="1520701951"
+       symbolicWarningColor="4118348031"
+       symbolicErrorColor="3422552319" />
+  </group>
   <group
      id="live_effects"
      flattening="0" />

@@ -12,8 +12,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-single-image-window")
     (position 0 27)
-    (size 1920 1026)
-    (monitor 1)
+    (size 1920 1025)
     (open-on-exit)
     (aux-info
         (left-docks-width "44")
@@ -28,9 +27,13 @@
             (dockable "gimp-tool-options"
                 (tab-style automatic)
                 (aux-info
+                    (show-button-bar "true")))
+            (dockable "gimp-gradient-list"
+                (tab-style automatic)
+                (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 546)
+            (position 535)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
@@ -43,24 +46,21 @@
                     (show-button-bar "true"))))))
 (session-info "toplevel"
     (factory-entry "gimp-image-new-dialog")
-    (position 40 35)
-    (monitor 1))
+    (position 40 35))
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
     (position 0 48)
-    (size 780 594)
-    (monitor 1))
+    (size 942 643))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
     (position 377 319)
-    (size 942 643)
-    (monitor 1))
+    (size 942 643))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
-    (position 900 0))
+    (position 340 109))
 (session-info "toplevel"
     (factory-entry "gimp-preferences-dialog")
-    (position 180 86)
+    (position 348 117)
     (size 1049 723))
 (session-info "toplevel"
     (factory-entry "gimp-controller-editor-dialog")
@@ -76,11 +76,11 @@
     (size 942 643))
 (session-info "toplevel"
     (factory-entry "gimp-keyboard-shortcuts-dialog")
-    (position 0 32)
-    (size 1920 1019))
+    (position 0 27)
+    (size 1918 1019))
 (session-info "toplevel"
     (factory-entry "gimp-operation-tool-dialog")
-    (position 1256 161))
+    (position 1404 149))
 (session-info "toplevel"
     (factory-entry "gimp-brightness-contrast-tool-dialog")
     (position 190 131)
