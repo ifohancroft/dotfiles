@@ -38,19 +38,64 @@ scrollback_lines = -1
 # "off", "left" or "right"
 #scrollbar = off 
 
+# Dracula theme for termite
+# https://github.com/dracula/termite
+# Copyright 2013-present, All rights reserved
+# Code licensed under the MIT license
+
 [colors]
+
+# special
+foreground      = #f8f8f2
+foreground_bold = #f8f8f2
+cursor          = #f8f8f2
+background      = rgba(0, 0, 0, 0.9)
+
+# black
+color0  = #000000
+color8  = #4d4d4d
+
+# red
+color1  = #ff5555
+color9  = #ff6e67
+
+# green
+color2  = #50fa7b
+color10 = #5af78e
+
+# yellow
+color3  = #f1fa8c
+color11 = #f4f99d
+
+# blue
+color4  = #bd93f9
+color12 = #caa9fa
+
+# magenta
+color5  = #ff79c6
+color13 = #ff92d0
+
+# cyan
+color6  = #8be9fd
+color14 = #9aedfe
+
+# white
+color7  = #bfbfbf
+color15 = #e6e6e6
+
+#[colors]
 # If both of these are unset, cursor falls back to the foreground color,
 # and cursor_foreground falls back to the background color.
 #cursor = #6400a4
 #cursor_foreground = #dcdccc
 
 #foreground = #666699
-foreground = #EEEEEC
+#foreground = #EEEEEC - mine
 #foreground_bold = #ffffff
 #background = #3f3f3f
 
 # 20% background transparency (requires a compositor)
-background = rgba(0, 0, 0, 0.9)
+#background = rgba(0, 0, 0, 0.9)
 
 # If unset, will reverse foreground and background
 #highlight = #2f2f2f
@@ -76,7 +121,7 @@ background = rgba(0, 0, 0, 0.9)
 #color17 = #666699
 #color18 = #6400a4
 
-[hints]
+#[hints]
 #font = Monospace 12
 #foreground = #dcdccc
 #background = #3f3f3f

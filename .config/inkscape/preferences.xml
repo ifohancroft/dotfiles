@@ -131,8 +131,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="207.552"
-         height="191.186" />
+         width="10.1884444073399"
+         height="6.53064895056942" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -166,10 +166,10 @@
          id="arc"
          style="fill:red;"
          end="0"
-         start="0"
+         start="50"
          usecurrent="1"
-         rx="15.3937"
-         ry="15.3937" />
+         rx="14.3368893877042"
+         ry="14.336889387703" />
       <eventcontext
          id="star"
          magnitude="3"
@@ -319,7 +319,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="mm"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -395,7 +395,8 @@
     <eventcontext
        id="select"
        selcue="1"
-       gradientdrag="0" />
+       gradientdrag="0"
+       touch_box="0" />
     <eventcontext
        id="connector"
        style="fill:none;fill-rule:evenodd;stroke:black;stroke-opacity:1;stroke-linejoin:miter;stroke-width:1px;stroke-linecap:butt;"
@@ -414,13 +415,20 @@
        unit="mm">
       <group
          id="measure-start"
-         x="0"
-         y="20.7874" />
+         x="551.491513975161"
+         y="480.014400395128" />
       <group
          id="measure-end"
-         x="1.64315e-15"
-         y="47.622" />
+         x="551.491513975161"
+         y="367.37628763578" />
     </group>
+    <eventcontext
+       id="marker"
+       selcue="1"
+       gradientdrag="1" />
+    <group
+       id="geometric"
+       mode="drag" />
   </group>
   <group
      id="palette">
@@ -541,7 +549,8 @@
   </group>
   <group
      id="colorselector"
-     page="0" />
+     page="0"
+     switcher="1" />
   <group
      id="embedded">
     <group
@@ -607,7 +616,7 @@
     <group
        id="preferences"
        state="1"
-       page="49"
+       page="0"
        x="464"
        y="83"
        w="992"
@@ -625,10 +634,13 @@
        path="">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="76.8" />
+      <group
+         id="batchexportarea"
+         value="layer" />
     </group>
     <group
        id="save_as"
@@ -661,7 +673,8 @@
        id="debug"
        redirect="0" />
     <group
-       id="clonetiler" />
+       id="clonetiler"
+       dotrace="0" />
     <group
        id="gridtiler" />
     <group
@@ -715,6 +728,8 @@
        placement="1" />
     <group
        id="extensioneditor" />
+    <group
+       id="objects" />
   </group>
   <group
      id="printing">
@@ -726,6 +741,7 @@
   </group>
   <group
      id="options"
+     rotationlock="1"
      onimport="0"
      dpifixbackup="1"
      dpiupdatemethod="0">
@@ -907,7 +923,8 @@
     <group
        id="maskobject"
        topmost="1"
-       remove="1" />
+       remove="1"
+       grouping="0" />
     <group
        id="blurquality"
        value="0" />
@@ -997,12 +1014,13 @@
        dynamicnotdone="1" />
     <group
        id="boot"
+       theme="custom"
        canvas="dark"
-       theme="compacted"
        enabled="0">
       <group
          id="shown"
-         ver1.1="1" />
+         ver1.1="1"
+         ver1.2="1" />
     </group>
     <group
        id="rendering" />
@@ -1018,18 +1036,55 @@
     <group
        id="font"
        unitType="2" />
+    <group
+       id="snapping"
+       snap-global-toggle="1"
+       snap-bbox="1"
+       snap-bbox-edge="1"
+       snap-bbox-corner="1"
+       snap-bbox-edge-midpoint="1"
+       snap-bbox-center="1"
+       simple-snap-bbox="1"
+       snap-node-category="1"
+       snap-path="1"
+       snap-path-intersection="1"
+       snap-node-cusp="1"
+       snap-node-smooth="1"
+       snap-line-midpoint="1"
+       snap-line-tangential="1"
+       snap-line-perpendicular="1"
+       simple-snap-nodes="1"
+       snap-alignment="1"
+       snap-alignment-self="1"
+       snap-distribution="1"
+       simple-snap-alignment="0"
+       snap-others="1"
+       snap-object-midpoint="1"
+       snap-rotation-center="1"
+       snap-text-baseline="1"
+       snap-path-mask="1"
+       snap-path-clip="1"
+       snap-page-border="1"
+       snap-grid="1"
+       snap-guide="1" />
+    <group
+       id="notebooklabels"
+       value="0" />
   </group>
   <group
      id="extensions"
+     org.inkscape.output.png.inkscape.png_bitdepth="99"
+     org.inkscape.output.png.inkscape.png_compression="6"
+     org.inkscape.output.png.inkscape.png_antialias="2"
      org.inkscape.input.svg.scale="auto" />
   <group
      id="desktop"
-     style="fill:#e02727;font-size:96px;stroke-linejoin:round;stroke-linecap:round;stroke-width:1.0015748">
+     style="fill:#ff0000;font-size:96px;stroke-linejoin:round;stroke-linecap:round;stroke-width:1.0015748">
     <group
-       width="1034"
-       height="818"
-       x="0"
-       y="27"
+       width="1300"
+       height="420"
+       x="272"
+       y="193"
        maximized="1"
        fullscreen="0"
        id="geometry" />
@@ -1052,11 +1107,43 @@
      id="toolbox"
      icononly="1"
      secondary="1"
+     simplesnap="0"
      small="1">
     <group
        id="tools"
        icononly="1"
-       small="0" />
+       small="1"
+       iconsize="20"
+       width="32">
+      <group
+         id="buttons"
+         showNode="1"
+         showMeasure="1"
+         showLPETool="1"
+         showGradient="1"
+         showMesh="1"
+         showDropper="1"
+         showPaintBucket="1"
+         showTweak="1"
+         showSpray="1"
+         showEraser="1"
+         showConnector="1"
+         showSelect="1"
+         showRect="1"
+         showArc="1"
+         showStar="1"
+         show3DBox="1"
+         showSpiral="1"
+         showPen="1"
+         showPencil="1"
+         showCalligraphic="1"
+         showText="1"
+         showZoom="1"
+         showPages="1" />
+    </group>
+    <group
+       id="controlbars"
+       iconsize="20" />
   </group>
   <group
      id="iconpreview"
@@ -1132,17 +1219,19 @@
   <group
      id="theme"
      defaultPreferDarkTheme="1"
-     defaultGtkTheme="BlueMenta"
-     defaultIconTheme="mate"
-     symbolicIcons="0"
-     preferDarkTheme="1"
+     defaultIconTheme="Mint-Y"
+     defaultGtkTheme="Dracula"
+     narrowSpinButton="1"
+     preferDarkTheme="0"
      darkTheme="1"
+     symbolicIcons="0"
+     symbolicDefaultBaseColors="1"
+     symbolicDefaultHighColors="1"
      menuIcons_canvas="0"
      menuIcons_layers="0"
      menuIcons_objects="0"
      defaultTheme="BlueMenta"
-     gtkTheme="Minwaita-Inkscape"
-     iconTheme="hicolor">
+     iconTheme="Dracula">
     <group
        id="hicolor"
        symbolicBaseColor="4008635647"
@@ -1153,4 +1242,16 @@
   <group
      id="live_effects"
      flattening="0" />
+  <group
+     id="statusbar">
+    <group
+       id="visibility"
+       style="1"
+       layer="1"
+       coordinates="1"
+       rotation="1" />
+  </group>
+  <group
+     id="color_scales"
+     wheel_vis_hsl="0" />
 </inkscape>

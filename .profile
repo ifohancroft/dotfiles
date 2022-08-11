@@ -1,3 +1,5 @@
+set -x
+exec 2>/tmp/profile.log
 export EDITOR=vim
 export GTK_RC_FILES=$XDG_CONFIG_HOME/gtk-1.0/gtkrc
 export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc

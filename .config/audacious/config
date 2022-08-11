@@ -4,7 +4,7 @@ cover_name_exclude=
 enable_replay_gain=FALSE
 
 [audgui]
-filesel_path=/home/ifohancroft/Music
+filesel_path=/home/ifohancroft/Music/Wumpscut/Madman Szpital Box/CD1
 
 [qtui]
 statusbar_visible=FALSE
@@ -17,7 +17,7 @@ player_x=3565
 player_y=27
 playlist_height=290
 playlist_visible=TRUE
-playlist_x=3586
+playlist_x=3565
 playlist_y=259
 skin=/usr/share/audacious/Skins/Refugee
 vis_type=2
