@@ -12,6 +12,7 @@ alias c64dtv='x64dtv'
 alias c128='x128'
 alias pet='xpet'
 alias vic20='xvic'
+alias vim='vim -u $HOME/.vim/vimrc' # Still loading the default vimrc, but doing it this way I can skip the distro specific Vim configuration
 #alias ncmpcpp='xseticon -id "$(xdotool getactivewindow)" $XDG_DATA_HOME/icons/hicolor/32x32/apps/mpd.png && ncmpcpp && xseticon -id "$(xdotool getactivewindow)" /usr/share/iocns/mate/32x32/apps/utilities-terminal.png'
 alias pip='function _pip(){
     if [ $1 = "search" ]; then

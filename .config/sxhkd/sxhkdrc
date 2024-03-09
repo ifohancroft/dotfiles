@@ -1,0 +1,34 @@
+# Saving this as it is, because it's so beautiful. If I add imgur upload, I'll have to chain the structure, as scrot doesn't allow chaining -e options as -e 'something' -e 'another something'. Instead, you have to do -e 'something;another something'
+#super + {_, ctrl + } {_, shift + }  s; {1,2,s,0}
+#    set -x; \
+#    scrot { , -e 'xdg-open $f'} { , -d 5} {-a 0\,0\,1920\,1080, -a 1920\,0\,1920\,1080, -s , } -p -q 100 ~/Pictures/Screenshots/%s.png
+
+super + {_, ctrl +, alt +, ctrl + alt +} {_, shift + }  s; {1,2,s,0}
+    set -x; \
+    scrot { , -e 'xdg-open $f', -e 'outputArgument $f', -e 'xdg-open $f;outputArgument $f' } { , -d 5} {-a 0\,0\,1920\,1080, -a 1920\,0\,1920\,1080, -s , } -p -q 100 ~/Pictures/Screenshots/%s.png
+
+super + Return
+    mate-terminal
+
+super + b
+    firefox
+
+# Still loading the default vimrc, but doing it this way I can skip the distro specific Vim configuration
+super + v
+    mate-terminal --icon=gvim -e 'vim -u $HOME/.vim/vimrc'
+
+super + i
+    mate-terminal --icon=weechat --maximize -e weechat
+
+super + e
+    mate-terminal --icon=mutt --maximize -e mutt
+
+super + n
+    mate-terminal --icon=newsboat --maximize -e newsboat
+
+super + t
+    mate-terminal --maximize -e task
+
+super + c
+    mate-terminal --maximize -e calcurse
+
