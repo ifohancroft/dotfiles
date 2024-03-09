@@ -1,4 +1,4 @@
-" Get the defaults that most users want.
+" Get the defaults
 unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
@@ -21,15 +21,15 @@ colorscheme nighted
 hi Normal guibg=NONE ctermbg=NONE
 
 " Misc
-let &titlestring = "Vim " . expand("%:t") . " @ " . hostname()
+" filename @ hostname - VIM
+set titlestring=%t\ @\ %{hostname()}\ -\ VIM
 set title
-" let &iconstring = "gvim"
+" set iconstring=vim
 " set icon
 
-"filetype plugin indent off
-
 " Key maps
-":nnoremap <Space><Space> :%s/\%.c/ /g<CR> " Insert space before cursor on all lines
-:nnoremap <expr> <Space> ':%s/\%.c/'.nr2char(getchar()).'/g<CR>' " Insert the next pressed character, before the cursor on all lines
-:nnoremap <BS><BS> :%s/\%.c.//g<CR> " Remove character under cursor on all lines
+" Insert the next pressed character, before the cursor on all lines
+:nnoremap <expr> <Space> ':%s/\%.c/'.nr2char(getchar()).'/g<CR>' 
+" Remove character under cursor on all lines
+:nnoremap <BS><BS> :%s/\%.c.//g<CR>
 
