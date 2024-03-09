@@ -15,16 +15,16 @@ super + b
 
 # Still loading the default vimrc, but doing it this way I can skip the distro specific Vim configuration
 super + v
-    mate-terminal --icon=gvim -e 'vim -u $HOME/.vim/vimrc'
+    mate-terminal -x vim -u $HOME/.vim/vimrc
 
 super + i
-    mate-terminal --icon=weechat --maximize -e weechat
+    mate-terminal --maximize -e weechat
 
 super + e
-    mate-terminal --icon=mutt --maximize -e mutt
+    mate-terminal --maximize -e mutt
 
 super + n
-    mate-terminal --icon=newsboat --maximize -e newsboat
+    mate-terminal --maximize -e newsboat
 
 super + t
     mate-terminal --maximize -e task
