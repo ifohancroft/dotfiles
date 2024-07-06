@@ -110,7 +110,7 @@ Comment[wa]=Asspougnî des fitchîs tecses
 Comment[zh_TW]=編輯文字檔
 TryExec=vim
 # Still loading the default vimrc, but doing it this way I can skip the distro specific Vim configuration
-Exec=vim -u $HOME/.vim/vimrc %F
+Exec=vim -u $XDG_CONFIG_HOME/vim/vimrc %F
 Terminal=true
 Type=Application
 # Translators: Search terms to find this application. Do NOT change the semicolons! The list MUST also end with a semicolon!

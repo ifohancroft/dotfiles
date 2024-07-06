@@ -131,8 +131,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="793.70078531901"
-         height="1122.51968209403" />
+         width="96"
+         height="110.28125" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -352,8 +352,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="37"
-       y="16"
+       x="697.31836"
+       y="182.18555"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -419,17 +419,17 @@
        measure-end="20.2093,718.849"
        fontsize="10"
        precision="5"
-       unit="in"
+       unit="px"
        ignore_1st_and_last="1"
        only_selected="0">
       <group
          id="measure-start"
-         x="26.087484839194"
-         y="5.39489672501265" />
+         x="813.250001287299"
+         y="232.069339999998" />
       <group
          id="measure-end"
-         x="16.3814597475185"
-         y="6.36383008716307" />
+         x="828.43359"
+         y="232.069340005515" />
     </group>
     <eventcontext
        id="paintbucket"
@@ -1151,7 +1151,7 @@
      org.inkscape.input.gdkpixbuf.png.dpi="from_default" />
   <group
      id="desktop"
-     style="fill:#ff0000;font-size:26.66666667px;-inkscape-font-specification:Aspekta;font-family:Aspekta;text-anchor:middle;text-align:center;stroke-linecap:square;paint-order:markers fill stroke">
+     style="fill:#ff0000;font-size:26.66666667px;-inkscape-font-specification:Aspekta;font-family:Aspekta;text-anchor:middle;text-align:center;stroke-linecap:square;paint-order:markers fill stroke;fill-opacity:0.10196079">
     <group
        width="1397"
        height="436"

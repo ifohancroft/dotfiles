@@ -1,13 +1,22 @@
 # Saving this as it is, because it's so beautiful. If I add imgur upload, I'll have to chain the structure, as scrot doesn't allow chaining -e options as -e 'something' -e 'another something'. Instead, you have to do -e 'something;another something'
-#super + {_, ctrl + } {_, shift + }  s; {1,2,s,0}
-#    set -x; \
-#    scrot { , -e 'xdg-open $f'} { , -d 5} {-a 0\,0\,1920\,1080, -a 1920\,0\,1920\,1080, -s , } -p -q 100 ~/Pictures/Screenshots/%s.png
+#super + {_, ctrl +} {_, alt +} {_, shift +} s; {1,2,s,0}
+#    scrot { , -e 'xdg-open $f'} { , -e 'scruptloader $f'} { , -d 5} {-M 1 -p , -M 0 -p, -s , -p } ~/Pictures/Screenshots/%s.png
 
-super + {_, ctrl +, alt +, ctrl + alt +} {_, shift + }  s; {1,2,s,0}
-    set -x; \
-    scrot { , -e 'xdg-open $f', -e 'outputArgument $f', -e 'xdg-open $f;outputArgument $f' } { , -d 5} {-a 0\,0\,1920\,1080, -a 1920\,0\,1920\,1080, -s , } -p -q 100 ~/Pictures/Screenshots/%s.png
+# Always capture the cursor, unless making a selection without a delay
+# Currently, scrot can't grab the pointer when doing both a selection and a delay and clicking on a drop-down menu, regardless of whether you are telling it to capture the cursor.
+#
+# If none of the bottom keys are pressed, just take a screenshot and save it.
+# When a monitor key is pressed, capture that monitor.
+# When the selection key is pressed, make a selection.
+# When a delay key is pressed, add a 5 second delay.
+# When the upload key is pressed, don't save the screenshot locally (or delete it after upload) and upload it.
+# When the open key is pressed, if the upload key is pressed, upload the screenshot and open its url in Firefox, otherwise open the local screenshot in the image viewer.
+# When the clipboard key is pressed, if the upload key is pressed, copy the screenshot url to the clipboard. Otherwise, do nothing.
 
-super + Return
+super + {_, ctrl +, alt +, ctrl + alt +} {_, shift +} s; {1,2,s,0}
+    scrot { , -e 'xdg-open $f > /dev/null 2>&1', -e 'scruploader $f > /dev/null 2>&1', -e 'scruploader $f open > /dev/null 2>&1'} { , -d 5} {-M 1 -p, -M 0 -p, -s , -p } ~/Pictures/Screenshots/%s.png
+
+super + @Return
     mate-terminal
 
 super + b
@@ -15,7 +24,7 @@ super + b
 
 # Still loading the default vimrc, but doing it this way I can skip the distro specific Vim configuration
 super + v
-    mate-terminal -x vim -u $HOME/.vim/vimrc
+    mate-terminal --maximize -x vim -u $XDG_CONFIG_HOME/vim/vimrc
 
 super + i
     mate-terminal --maximize -e weechat
