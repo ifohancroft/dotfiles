@@ -131,8 +131,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="96"
-         height="110.28125" />
+         width="369.109741210938"
+         height="402.34375" />
       <eventcontext
          id="3dbox"
          style="stroke:none;stroke-linejoin:round;"
@@ -352,8 +352,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="697.31836"
-       y="182.18555"
+       x="88.763575"
+       y="87.094223"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -419,17 +419,17 @@
        measure-end="20.2093,718.849"
        fontsize="10"
        precision="5"
-       unit="px"
+       unit="mm"
        ignore_1st_and_last="1"
        only_selected="0">
       <group
          id="measure-start"
-         x="813.250001287299"
-         y="232.069339999998" />
+         x="0"
+         y="2.06646617330003" />
       <group
          id="measure-end"
-         x="828.43359"
-         y="232.069340005515" />
+         x="833.452495970207"
+         y="2.06646617330003" />
     </group>
     <eventcontext
        id="paintbucket"
@@ -558,7 +558,7 @@
   </group>
   <group
      id="colorselector"
-     page="2"
+     page="CMYK"
      switcher="1">
     <group
        id="RGB"
@@ -612,7 +612,7 @@
        id="toolbox" />
     <group
        id="fillstroke"
-       page="1"
+       page="2"
        x="0"
        y="0"
        w="378"
@@ -681,7 +681,7 @@
        defaultopts="1">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
          value="76.8" />
@@ -690,14 +690,14 @@
          value="layer" />
       <group
          id="defaultdpi"
-         value="96" />
+         value="300" />
     </group>
     <group
        id="save_as"
        default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/ifohancroft/Documents/Assets/Graphics/Screw drives/Multiple-square drives"
+       path="/home/ifohancroft/Desktop"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -712,13 +712,13 @@
     <group
        id="import"
        enable_preview="1"
-       path="/home/ifohancroft/Desktop/"
+       path="/home/ifohancroft/Projects/Assets/3D Models/TTRPG/Paladin Woodworking Dice Tower Files/"
        ask="1"
        ask_svg="1"
        link="embed"
        scale="auto"
        import_mode_svg="include"
-       forcexdpi="0" />
+       forcexdpi="1" />
     <group
        id="debug"
        redirect="0" />
@@ -1148,15 +1148,17 @@
      org.inkscape.output.png.inkscape.png_antialias="2"
      org.inkscape.input.svg.scale="auto"
      org.inkscape.webdesign.interactive_mockup.when="onclick"
-     org.inkscape.input.gdkpixbuf.png.dpi="from_default" />
+     org.inkscape.input.gdkpixbuf.png.dpi="from_default"
+     org.inkscape.output.pdf.cairorenderer.PDFversion="PDF-1.5"
+     org.inkscape.output.pdf.cairorenderer.resolution="300" />
   <group
      id="desktop"
-     style="fill:#ff0000;font-size:26.66666667px;-inkscape-font-specification:Aspekta;font-family:Aspekta;text-anchor:middle;text-align:center;stroke-linecap:square;paint-order:markers fill stroke;fill-opacity:0.10196079">
+     style="fill:#000000;font-size:26.66666667px;-inkscape-font-specification:Aspekta;font-family:Aspekta;text-anchor:middle;text-align:center;stroke-width:1.25">
     <group
-       width="1397"
-       height="436"
-       x="2154"
-       y="118"
+       width="1918"
+       height="1022"
+       x="0"
+       y="27"
        maximized="1"
        fullscreen="0"
        id="geometry" />

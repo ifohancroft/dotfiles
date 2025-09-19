@@ -17,7 +17,7 @@ super + {_, ctrl +, alt +, ctrl + alt +} {_, shift +} s; {1,2,s,0}
     scrot { , -e 'xdg-open $f > /dev/null 2>&1', -e 'scruploader $f > /dev/null 2>&1', -e 'scruploader $f open > /dev/null 2>&1'} { , -d 5} {-M 1 -p, -M 0 -p, -s , -p } ~/Pictures/Screenshots/%s.png
 
 super + @Return
-    mate-terminal
+    mate-terminal --maximize
 
 super + b
     firefox

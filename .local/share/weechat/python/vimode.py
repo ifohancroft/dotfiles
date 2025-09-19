@@ -1835,15 +1835,23 @@ if __name__ == "__main__":
         print_warning("Please upgrade to WeeChat ≥ 1.0.0. Previous versions"
                       " are not supported.")
     # Set up script options.
-    for option, value in list(vimode_settings.items()):
-        if weechat.config_is_set_plugin(option):
-            vimode_settings[option] = weechat.config_get_plugin(option)
-        else:
+    # for option, value in list(vimode_settings.items()):
+        # if weechat.config_is_set_plugin(option):
+            # vimode_settings[option] = weechat.config_get_plugin(option)
+        # else:
+            # weechat.config_set_plugin(option, value[0])
+            # vimode_settings[option] = value[0]
+        # weechat.config_set_desc_plugin(option,
+                                       # "%s (default: \"%s\")" % (value[1],
+                                                                 # value[0]))
+    for option, value in vimode_settings.items():
+        if not weechat.config_is_set_plugin(option):
             weechat.config_set_plugin(option, value[0])
             vimode_settings[option] = value[0]
         weechat.config_set_desc_plugin(option,
                                        "%s (default: \"%s\")" % (value[1],
                                                                  value[0]))
+        vimode_settings[option] = weechat.config_get_plugin(option)
     load_user_mappings()
     load_mode_colors()
     # Warn the user about possible problems if necessary.
